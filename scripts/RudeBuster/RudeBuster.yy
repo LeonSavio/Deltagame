@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RudeBuster",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RudeBuster",
+  "parent":{
+    "name":"Attacks",
+    "path":"folders/Scripts/Attacks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,53 @@
+if (keyboard_check_pressed(vk_enter) && 
+layer_exists("Objects") && 
+!instance_exists(obj_player2summon) &&
+global.FullPlayer == false){
+	instance_create_layer(x,y, "Objects", obj_player2summon);
+}
+//Isso tem mais condições do que eu me orgulho
+
+if (keyboard_check(vk_f5)){
+	game_restart()
+}
+
+if keyboard_check_pressed(vk_pagedown){
+	room_goto_previous()
+}
+if keyboard_check_pressed(vk_pageup){
+	room_goto_next()
+}
+
+switch(room){
+	case rm_TitleScreen:
+	layer_set_visible("UILayer",false)
+	break;
+}
+
+if room == rm_Beach && instance_exists(par_player){
+global.time += 1/FRAME_RATE
+}
+
+if room == rm_Beach && instance_number(par_enemy) <= 0{
+	room_goto(rm_Victory)
+}
+if room == rm_Victory{
+instance_create_layer(472, 252,"Instances", obj_victory)}
+
+if keyboard_check_pressed(ord("O")){
+	par_player.x = 1888
+	par_player.y = 816
+}
+
+if keyboard_check_pressed(vk_f2){
+	if obj_wall.visible == false {obj_wall.visible = true} else {
+		 obj_wall.visible =  false
+	}
+}
+
+if keyboard_check_pressed(vk_f3){
+	if (layer_set_visible(layer_get_id("Collisions"),false)){
+		 (layer_set_visible(layer_get_id("Collisions"),true))
+	} else {
+		 (layer_set_visible(layer_get_id("Collisions"),false))
+	}
+}

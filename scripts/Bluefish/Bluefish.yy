@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Bluefish",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Bluefish",
+  "parent":{
+    "name":"AIBehaviours",
+    "path":"folders/Scripts/AIBehaviours.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

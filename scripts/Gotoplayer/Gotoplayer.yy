@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Gotoplayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Gotoplayer",
+  "parent":{
+    "name":"AIBehaviours",
+    "path":"folders/Scripts/AIBehaviours.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

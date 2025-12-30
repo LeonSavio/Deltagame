@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"FlowerShoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FlowerShoot",
+  "parent":{
+    "name":"AIBehaviours",
+    "path":"folders/Scripts/AIBehaviours.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

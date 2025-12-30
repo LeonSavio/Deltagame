@@ -1,0 +1,3 @@
+function None(){
+	State = PlayerStateFree;
+}

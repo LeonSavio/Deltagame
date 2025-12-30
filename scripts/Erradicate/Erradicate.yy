@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Erradicate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Erradicate",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

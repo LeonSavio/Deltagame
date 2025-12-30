@@ -1,0 +1,10 @@
+x = camera_get_view_x(view_camera[0]/2)
+y = camera_get_view_y(view_camera[0]/2)
+image_blend = c_red
+image_xscale = 4
+image_yscale = 4
+spd = 12;
+targetx = x;
+targety = y;
+canmove = false
+gotonext = false

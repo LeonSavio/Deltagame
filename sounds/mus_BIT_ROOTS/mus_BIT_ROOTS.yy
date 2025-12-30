@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_BIT_ROOTS",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":77.03703,
+  "exportDir":"",
+  "name":"mus_BIT_ROOTS",
+  "parent":{
+    "name":"Soundtrack",
+    "path":"folders/Sounds/Soundtrack.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_BIT_ROOTS.mp3",
+  "volume":1.0,
+}
