@@ -9,4 +9,4 @@ spr_left = spr_deerleftalt;
 spr_idle = spr_deeridlealt;
 
 State = PlayerStateFree
-StateAttack = IceShock
+StateAttack = [IceShock, HealPrayer]

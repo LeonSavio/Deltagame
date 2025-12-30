@@ -8,7 +8,7 @@ localFrame = 0;
 
 //Estado do player
 State = PlayerStateFree;
-
+pos = 0;
 HitByAttack = -1;
 
 //Cooldown atual do ataque
@@ -16,8 +16,7 @@ AttackCd = 0;
 
 //Faz o Hp inicial começar full
 HP = HPMax;
-TP = 0;
-
+TP = 39;
 //Informações de Knockback
 KBSpeed = 0;
 KBDir = 0;
@@ -42,6 +41,8 @@ Up = 1
 Down = 1
 Confirm = 1
 Cancel = 1
+Camera = 1
+Change = 1
 
 if Player == 1{
 	Left = vk_left
@@ -51,7 +52,8 @@ if Player == 1{
 	Confirm = ord("Z")
 	Cancel = ord("X")
 	Taught = ord("V")
-	Camera = ord("Y")
+	Camera = ord("N")
+	Change= ord("C")
 	obj_camera.target = self
 	global.time = 0
 }
@@ -64,7 +66,8 @@ if Player == 2{
 	Confirm = vk_enter
 	Cancel = vk_shift
 	Taught = ord("T")
-	Camera = ord("U")
+	Camera = ord("M")
+	Change= vk_control
 }
 
 NextLevelEXP = 3;

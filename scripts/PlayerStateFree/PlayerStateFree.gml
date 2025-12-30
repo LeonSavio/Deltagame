@@ -78,9 +78,16 @@ if taughtk && !audio_is_playing(taughtaudio) && taughtaudio != 0{
 	audio_play_sound(taughtaudio,0,false)
 }
 
-}
-
-if instance_exists(obj_camera){
 if (keyboard_check_pressed(Camera)){
 	obj_camera.target = self
-}}
+}
+
+if(keyboard_check_pressed(Change)){
+	pos += 1
+}
+
+if pos >= array_length(StateAttack) {pos = 0};
+if pos < 0 {pos = array_length(StateAttack)-1}
+
+}
+

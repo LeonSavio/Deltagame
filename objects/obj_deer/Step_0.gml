@@ -11,3 +11,4 @@ if Player == 1{
 if Player == 2{
 	obj_hud.TPVisible2 = true
 }}
+

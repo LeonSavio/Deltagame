@@ -1,3 +1,3 @@
 function PlayerStateAttack(){
-	script_execute(StateAttack)
+	script_execute(StateAttack[pos])
 }

@@ -4,7 +4,7 @@ function Erradicate(Attacker,Taker) {
 	audio_play_sound(snd_kill,1,false)
 	if (Attacker.LV != 4){
 	par_player.EXP += Taker.EXPDrop
-	par_player.TP += 1
+	par_player.TP += 2
 	}
 	}
 	if Attacker.sprite_index != spr_iceshock{

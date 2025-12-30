@@ -9,4 +9,4 @@ spr_left = spr_axeleft;
 spr_idle = spr_axeidle;
 
 State = PlayerStateFree
-StateAttack = RudeBuster
+StateAttack = [RudeBuster]

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlayerStateAiming",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerStateAiming",
+  "parent":{
+    "name":"States",
+    "path":"folders/Scripts/States.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -53,6 +53,7 @@ if Player == 1{
 	obj_hud.PlayerOneExp = EXP;
 	obj_hud.PlayerOneExpNext = NextLevelEXP;
 	obj_hud.PlayerOneLV = LV;
+	obj_hud.TpOne = TP;
 	obj_hud.TPVisible1 = false
 }
 

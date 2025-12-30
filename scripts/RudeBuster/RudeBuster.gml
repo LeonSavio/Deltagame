@@ -48,14 +48,14 @@ function RudeBuster(){
 				rudebuster.image_yscale = 0.90;
 				rudebuster.spd = 4.5;
 				rudebuster.ATK = (self.ATK)*0.1
-				rudebuster.KBForce = 0;
+				rudebuster.KBForce = 4;
 			}
 			if RudePower >= 20 && RudePower < 45{
 				rudebuster.sprite_index = atk_rudebuster;
 				rudebuster.spd = 6;
 				rudebuster.ATK = (self.ATK)*1.0
 				audio_play_sound(snd_rudebuster_swing,0,false)
-				rudebuster.KBForce = 2;
+				rudebuster.KBForce = 6;
 			}
 			if RudePower >= 45{
 				rudebuster.sprite_index = atk_redbuster;
@@ -63,7 +63,7 @@ function RudeBuster(){
 				rudebuster.spd = 8;
 				rudebuster.ATK = (self.ATK)*1.5
 				audio_play_sound(snd_redbuster_swing,0,false)
-				rudebuster.KBForce = 3.5;
+				rudebuster.KBForce = 8;
 			}
 			
 		rudebuster.RudePower = self.RudePower
