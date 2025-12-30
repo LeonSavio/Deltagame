@@ -20,6 +20,13 @@ ColorOne = make_color_rgb(255,255,101);
 if obj_deer.Player == 2{
 ColorTwo = make_color_rgb(255,255,101);
 }}
+if instance_exists(obj_scarf){
+if obj_scarf.Player == 1{
+ColorOne = make_color_rgb(155,255,127);
+}
+if obj_scarf.Player == 2{
+ColorTwo = make_color_rgb(155,255,127);
+}}
 #endregion
 
 layer_sprite_blend(HpBar,ColorOne)

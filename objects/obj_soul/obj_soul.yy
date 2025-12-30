@@ -9,8 +9,8 @@
   "name":"obj_soul",
   "overriddenProperties":[],
   "parent":{
-    "name":"Heroes",
-    "path":"folders/Objects/Heroes.yy",
+    "name":"GlobalStuff",
+    "path":"folders/Objects/GlobalStuff.yy",
   },
   "parentObjectId":null,
   "persistent":true,

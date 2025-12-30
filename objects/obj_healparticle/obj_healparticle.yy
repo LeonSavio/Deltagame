@@ -10,8 +10,8 @@
   "name":"obj_healparticle",
   "overriddenProperties":[],
   "parent":{
-    "name":"ActualObjects",
-    "path":"folders/Objects/ActualObjects.yy",
+    "name":"Attacks",
+    "path":"folders/Objects/Heroes/Attacks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

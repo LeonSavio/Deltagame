@@ -9,8 +9,8 @@
   "name":"obj_iceflake",
   "overriddenProperties":[],
   "parent":{
-    "name":"ActualObjects",
-    "path":"folders/Objects/ActualObjects.yy",
+    "name":"Attacks",
+    "path":"folders/Objects/Heroes/Attacks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

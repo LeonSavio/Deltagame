@@ -3,12 +3,13 @@
   "%Name":"obj_axe",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_axe",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"HPMax","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"ATK","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2.5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"ATK","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2.2",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"spd","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.9",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"AttackCdMax","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"KBForce","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},

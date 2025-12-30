@@ -17,6 +17,7 @@ camera = view_camera
 audio_stop_all()
 camera_set_view_size(camera,480,360)
 camera_set_view_pos(camera,x,y)
+instance_destroy(obj_hud)
 
 if !instance_exists(obj_soul){
 	instance_create_layer(x,y,layer,obj_soul)

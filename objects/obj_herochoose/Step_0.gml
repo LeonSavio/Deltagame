@@ -18,11 +18,11 @@ if rightk{
 	pos -= 1
 }
 
-if pos > 2 {
+if pos > 3 {
  pos = 0
 }
 if pos < 0{
- pos = 2
+ pos = 3
 }
 
 switch(pos){
@@ -30,6 +30,7 @@ switch(pos){
 	case 0: image_blend = c_red; image_yscale = 2 break;
 	case 2: image_blend = c_purple; image_yscale = -2; break;
 	case 1: image_blend = c_aqua; image_yscale = -2; break;
+	case 3: image_blend = c_lime; image_yscale = -2; break;
 
 }
 
@@ -50,6 +51,12 @@ if confirmk{
 		
 		case 1: 
 		instance_create_layer(x,y,"Objects",obj_deer);
+		layer_set_visible(Tiles, true)
+		instance_destroy();
+		break;
+		
+		case 3: 
+		instance_create_layer(x,y,"Objects",obj_scarf);
 		layer_set_visible(Tiles, true)
 		instance_destroy();
 		break;

@@ -8,7 +8,7 @@
   "name":"obj_hero",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"spd","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"AttackCdMax","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"35",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"AttackCdMax","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"25",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"ATK","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3.5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"HPMax","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"taughtaudio","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.0",},

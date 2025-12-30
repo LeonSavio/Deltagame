@@ -9,8 +9,8 @@
   "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collisions",
-    "path":"folders/Objects/Collisions.yy",
+    "name":"GlobalStuff",
+    "path":"folders/Objects/GlobalStuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

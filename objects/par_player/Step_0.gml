@@ -21,7 +21,9 @@ KBSpeed *= 0.85;
 
 }
 
-clamp(TP,0,39)
+if TP > 39{
+	TP = 39
+}
 
 //IFrames
 if (IFrames) {
@@ -66,4 +68,3 @@ if Player == 2{
 	obj_hud.TpTwo = TP;
 	obj_hud.TPVisible2 = false
 }}
-

@@ -9,8 +9,8 @@
   "name":"obj_rudebuster",
   "overriddenProperties":[],
   "parent":{
-    "name":"Heroes",
-    "path":"folders/Objects/Heroes.yy",
+    "name":"Attacks",
+    "path":"folders/Objects/Heroes/Attacks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

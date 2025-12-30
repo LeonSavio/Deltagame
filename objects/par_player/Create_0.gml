@@ -16,7 +16,7 @@ AttackCd = 0;
 
 //Faz o Hp inicial começar full
 HP = HPMax;
-TP = 39;
+TP = 0;
 //Informações de Knockback
 KBSpeed = 0;
 KBDir = 0;
