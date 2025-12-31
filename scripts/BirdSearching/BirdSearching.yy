@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BirdSearching",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BirdSearching",
+  "parent":{
+    "name":"AIBehaviours",
+    "path":"folders/Scripts/AIBehaviours.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,7 +1,5 @@
 event_inherited()
 
-Cd = 0;
-CdMax = 120;
-
+target = 0;
 targetx = 0;
 targety = 0;

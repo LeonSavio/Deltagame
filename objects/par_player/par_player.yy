@@ -36,6 +36,7 @@
     {"$GMObjectProperty":"v2","%Name":"KBForce","filters":[],"listItems":[],"multiselect":false,"name":"KBForce","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"taughtaudio","filters":[],"listItems":[],"multiselect":false,"name":"taughtaudio","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"EXP","filters":[],"listItems":[],"multiselect":false,"name":"EXP","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"Magic","filters":[],"listItems":[],"multiselect":false,"name":"Magic","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

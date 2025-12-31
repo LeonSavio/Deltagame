@@ -7,7 +7,7 @@ y+= vspd * spd
 target = instance_nearest(x,y,par_player)
 if keyboard_check_released(confirmk){
 	if place_meeting(x,y,target){
-		target.HP += 1
+		target.HP += 0.5+(Magic*0.5)
 		var healef = instance_create_layer(target.x,target.y,"Ice",obj_healparticle)
 		healef.target = target
 	}

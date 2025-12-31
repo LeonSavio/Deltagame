@@ -14,6 +14,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"AttackCdMax","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"25",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"KBForce","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"taughtaudio","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_suslaugh",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"Magic","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"LV","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"Heroes",

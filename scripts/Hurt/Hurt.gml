@@ -1,10 +1,14 @@
 function Hurt(Attacker, Enemy, KBForce){
 	Enemy.Hitted = true;
 	if (Attacker.LV >= Enemy.LVNeeded && Enemy.IFrames != true){
-	if Attacker.sprite_index != spr_iceshock{
-	Enemy.HP = Enemy.HP - Attacker.ATK} else {
+	if Attacker.sprite_index == spr_iceshock{
 	Enemy.HP = Enemy.HP - Attacker.ATK
-	Enemy.Freezing = 85
+	Enemy.Freezing = 65} 
+	if Attacker.sprite_index == spr_fireball{
+	Enemy.Burning += 1
+	}
+	else {
+	Enemy.HP = Enemy.HP - Attacker.ATK
 	}
 	Hurted(Attacker, KBForce, 10, 30)
 	audio_play_sound(snd_damage,0,false)

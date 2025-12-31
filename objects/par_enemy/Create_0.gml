@@ -29,3 +29,9 @@ image_yscale = 2;
 
 Hitted = false
 Freezing = 0
+Burning = 0
+
+trailtime = 0;
+traildelay = 2;
+
+Cd = 0

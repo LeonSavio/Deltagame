@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Jumparound",
+  "%Name":"BirdFlying",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Jumparound",
+  "name":"BirdFlying",
   "parent":{
     "name":"AIBehaviours",
     "path":"folders/Scripts/AIBehaviours.yy",

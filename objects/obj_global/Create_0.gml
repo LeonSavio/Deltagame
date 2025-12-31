@@ -6,6 +6,7 @@ if (instance_number(obj_hud) > 1) {
 global.tilemap_collision = layer_tilemap_get_id("Collisions");
 //Tempo de piscada do Iframe
 global.flash_bliking = 4;
+global.show_hp = true
 
 //Telacheia
 global.issfull = false

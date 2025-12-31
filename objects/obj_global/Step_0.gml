@@ -45,9 +45,18 @@ if keyboard_check_pressed(vk_f2){
 }
 
 if keyboard_check_pressed(vk_f3){
-	if (layer_set_visible(layer_get_id("Collisions"),false)){
+	if (layer_get_visible(layer_get_id("Collisions"))) == false{
 		 (layer_set_visible(layer_get_id("Collisions"),true))
 	} else {
 		 (layer_set_visible(layer_get_id("Collisions"),false))
 	}
 }
+
+if keyboard_check_pressed(vk_f9){
+	if (global.show_hp) == false{
+		 (global.show_hp) = true
+	} else {
+		  (global.show_hp) = false
+	}
+}
+

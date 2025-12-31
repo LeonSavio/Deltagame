@@ -77,3 +77,31 @@ spd = spdbase/2
 } else {
 	spd = spdbase
 }
+
+if Burning > 0{
+Burning -= 1/(300-(Burning*20))
+HP -= (0.25/30)*Burning
+image_blend = c_orange
+
+trailtime++;
+
+if (trailtime >= traildelay){
+	
+trailtime = 0;
+var tr = instance_create_layer(x, y, layer, obj_rudebuster_trail);
+tr.sprite_index = spr_fireball;
+tr.image_index = image_index;
+tr.image_angle = image_angle;
+tr.image_xscale = 3;
+tr.image_yscale = 3;
+tr.image_blend = image_blend; 
+}
+} 
+if Burning <= 0{
+Burning = 0;
+image_blend = c_white
+}
+
+if Cd > 0{
+Cd--
+}

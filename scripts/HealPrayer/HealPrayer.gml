@@ -12,6 +12,7 @@ function HealPrayer(){
 	rudebuster.upk = self.Up
 	rudebuster.downk = self.Down
 	rudebuster.confirmk = self.Confirm
+	rudebuster.Magic = self.Magic
 	self.State = PlayerStateAiming
 	}
 }
