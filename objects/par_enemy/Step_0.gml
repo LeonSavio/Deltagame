@@ -105,3 +105,9 @@ image_blend = c_white
 if Cd > 0{
 Cd--
 }
+
+if instance_number(par_player) > _PlayersStarted{
+	HP += HPMax*(instance_number(par_player)-0.5)
+	spdbase += 0.3*(instance_number(par_player))
+	_PlayersStarted	= instance_number(par_player)
+}

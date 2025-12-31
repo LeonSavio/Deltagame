@@ -26,11 +26,11 @@ if TileColl(x, y+vspd){
 	vspd = 0;
 }
 
-if place_meeting(x+hspd, y, obj_wall){
+if place_meeting(x+hspd, y, obj_wall) || place_meeting(x, y+vspd, obj_projectfriendly){
 	hspd = 0;
 }
 
-if place_meeting(x, y+vspd, obj_wall){
+if place_meeting(x, y+vspd, obj_wall) || place_meeting(x, y+vspd, obj_projectfriendly){
 	vspd = 0;
 }
 

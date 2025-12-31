@@ -1,11 +1,16 @@
 var Tiles = layer_get_id("Tiles")
 
-if instance_exists(par_player) >= 1 {
+if instance_number(par_player) = 2 {
+leftk = keyboard_check_pressed(ord("J"))
+rightk = keyboard_check_pressed(ord("L"))
+confirmk = keyboard_check_pressed(ord("E"))
+}
+if instance_number(par_player) = 1 {
 leftk = keyboard_check_pressed(ord("A"))
 rightk = keyboard_check_pressed(ord("D"))
 confirmk = keyboard_check_pressed(vk_enter)
 }
-if instance_exists(par_player) <= 0 {
+if instance_number(par_player) = 0 {
 leftk = keyboard_check_pressed(vk_left)
 rightk = keyboard_check_pressed(vk_right)
 confirmk = keyboard_check_pressed(ord("Z"))

@@ -52,8 +52,24 @@ layer_text_text(LV2, "LV"+string(PlayerTwoLV))
 layer_set_visible("PlayerTwo",true)
 }
 
-if instance_number(par_player) < 2{
+if instance_number(par_player) <= 1{
 layer_set_visible("PlayerTwo",false)
+}
+if instance_number(par_player) <= 2{
+layer_set_visible("PlayerThree",false)
+}
+
+if instance_number(par_player) >=3{
+layer_sprite_blend(HpBar3,ColorThree)
+layer_sprite_xscale(HpBar3,(PlayerThreeHp/PlayerThreeMaxHp)*100)
+
+layer_sprite_blend(ExpBar3,ColorThree)
+layer_sprite_xscale(ExpBar3,(PlayerThreeExp/PlayerThreeExpNext)*100)
+layer_sprite_xscale(ExpBarEmp3,100)
+
+layer_text_text(LV3, "LV"+string(PlayerThreeLV))
+
+layer_set_visible("PlayerThree",true)
 }
 
 
@@ -70,4 +86,12 @@ if TPVisible2 == true{
 layer_set_visible("TPBar2",true)
 layer_sprite_yscale(BarraTP2,TpTwo)
 layer_sprite_blend(BarraTP2,ColorTwo)
-}}
+}
+
+if TPVisible3 == true{
+layer_set_visible("TPBar3",true)
+layer_sprite_yscale(BarraTP3,TpThree)
+layer_sprite_blend(BarraTP3,ColorThree)
+}
+
+}

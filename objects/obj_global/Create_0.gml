@@ -8,9 +8,6 @@ global.tilemap_collision = layer_tilemap_get_id("Collisions");
 global.flash_bliking = 4;
 global.show_hp = true
 
-//Telacheia
-global.issfull = false
-
 //Controles gerais
 global.controls = {
 	Fullscreen: vk_f4,

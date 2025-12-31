@@ -10,10 +10,10 @@ x+= KBHspd;
 if (!TileColl(x, y + (KBVspd*1.5))){
 y+= KBVspd
 }
-if (!place_meeting(x + (KBHspd*1.5), y, obj_wall)){
+if (!place_meeting(x + (KBHspd*1.5), y, obj_wall)) || !place_meeting(x + (KBHspd*1.5), y, obj_projectfriendly){
 x+= KBHspd;
 }
-if (!place_meeting(x, y + (KBVspd*1.5), obj_wall)){
+if (!place_meeting(x, y + (KBVspd*1.5), obj_wall))  || !place_meeting(x, y + (KBVspd*1.5), obj_projectfriendly){
 y+= KBVspd
 }
 KBTimer -= 1;
@@ -67,4 +67,15 @@ if Player == 2{
 	obj_hud.PlayerTwoLV = LV;
 	obj_hud.TpTwo = TP;
 	obj_hud.TPVisible2 = false
-}}
+}
+
+if Player == 3{
+	obj_hud.PlayerThreeHp = HP;
+	obj_hud.PlayerThreeMaxHp = HPMax;
+	obj_hud.PlayerThreeExp = EXP;
+	obj_hud.PlayerThreeExpNext= NextLevelEXP;
+	obj_hud.PlayerThreeLV = LV;
+	obj_hud.TpThree = TP;
+	obj_hud.TPVisible3 = false
+}
+}

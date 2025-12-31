@@ -1,15 +1,16 @@
 // Inherit the parent event
 event_inherited();
 
-ATK = 1 /*1.225*LV*/
+ATK = 1.225*LV
 
 if instance_exists(obj_hud){
 if Player == 1{
 	obj_hud.TPVisible1 = true
 }
-
 if Player == 2{
 	obj_hud.TPVisible2 = true
-}}
-
-//show_debug_message(instance_number(obj_iceshock));
+}
+if Player == 3{
+	obj_hud.TPVisible3 = true
+}
+}

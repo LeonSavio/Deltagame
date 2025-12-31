@@ -1,9 +1,18 @@
+if instance_number(par_player) = 1{
 if (keyboard_check_pressed(vk_enter) && 
 layer_exists("Objects") && 
 !instance_exists(obj_player2summon) &&
 global.FullPlayer == false){
 	instance_create_layer(x,y, "Objects", obj_player2summon);
-}
+}}
+if instance_number(par_player) = 2{
+if (keyboard_check_pressed(ord("E")) && 
+layer_exists("Objects") && 
+!instance_exists(obj_player2summon) &&
+global.FullPlayer == false){
+	instance_create_layer(x,y, "Objects", obj_player2summon);
+}}
+
 //Isso tem mais condições do que eu me orgulho
 
 if (keyboard_check(vk_f5)){

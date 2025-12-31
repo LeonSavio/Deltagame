@@ -70,6 +70,18 @@ if Player == 2{
 	Change= vk_control
 }
 
+if Player == 3{
+	Left = ord("J")
+	Right = ord("L")
+	Up = ord("I")
+	Down = ord("K")
+	Confirm = ord("E")
+	Cancel = ord("R")
+	Taught = ord("Y")
+	Camera = ord("Q")
+	Change= vk_alt
+}
+
 NextLevelEXP = 3;
 
 division = 0;

@@ -1,5 +1,7 @@
 var lay_id = layer_get_id("Collisions");
 var map_id = layer_tilemap_get_id(lay_id);
+var lay2_id = layer_get_id("Projectiles");
+var map2_id = layer_tilemap_get_id(lay2_id);
 var grid_unit = 32;
 
 if loop == true{
@@ -11,7 +13,11 @@ for (var xx = 0; xx <= room_width; xx += grid_unit)
         {
             instance_create_depth(xx+16, yy+16, 10, obj_wall);
         }
-	if xx=room_width or yy=room_height{loop = false
+        if (tilemap_get_at_pixel(map2_id, xx, yy) != 0)
+        {
+            instance_create_depth(xx+16, yy+16, 10, obj_projectfriendly);
+        }
+	if xx=room_width or yy=room_height{ loop = false
 		}
     }
 }}

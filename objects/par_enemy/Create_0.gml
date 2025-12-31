@@ -7,6 +7,7 @@ ds_list_clear(EnemyHitByAttack)
 
 //Faz a vida começar full
 HP = HPMax
+_PlayersStarted = 1
 
 //Info de Knockback
 KBSpeed = 0;
@@ -19,7 +20,6 @@ KBVspd = 0;
 IFrames = false;
 IFramesTimer = 0;
 FlashTimer = 0;
-
 
 //Set a velocidade dele como a velocidade base
 spd = spdbase;

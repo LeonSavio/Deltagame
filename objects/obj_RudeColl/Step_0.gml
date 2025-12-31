@@ -8,7 +8,7 @@ if LifeTime >= owner.lifetimer{
 }
 }
 
-if TileColl(x,y){
+if  place_meeting(x,y,obj_wall){
 	instance_destroy()
 	instance_destroy(owner)
 }
