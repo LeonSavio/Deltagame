@@ -31,11 +31,6 @@ KBSpeed *= 0.85;
 //IFrames
 if (IFrames) {
 
-	/*var proj = instance_nearest(x,y,obj_iceshock)
-	if place_meeting(x,y,proj){
-		instance_destroy(proj.collider)
-		instance_destroy(proj)
-	}*/
 	
     IFramesTimer -= 1;
     FlashTimer += 1;
@@ -81,6 +76,11 @@ spd = spdbase/2
 if Burning > 0{
 Burning -= 1/(300-(Burning*20))
 HP -= (0.25/30)*Burning
+
+if HP <= 0 {
+	Erradicate(par_player, self)
+} 
+
 image_blend = c_orange
 
 trailtime++;
@@ -104,8 +104,4 @@ image_blend = c_white
 
 if Cd > 0{
 Cd--
-}
-
-if self.HP <= 0 {
-	Erradicate(par_player, self)
 }
