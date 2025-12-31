@@ -1,7 +1,11 @@
 if (!ds_exists(HitByAttack, ds_type_list)) HitByAttack = ds_list_create();
 ds_list_clear(HitByAttack)
 
-AttackHit(spr_iceshock)
+if (place_meeting(x,y,par_enemy)) {
+AttackHit(spr_iceshock);
+instance_destroy(collider);
+instance_destroy();
+}
 
 if Dir == 0{
 	x += spd;

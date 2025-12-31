@@ -30,12 +30,12 @@ KBSpeed *= 0.85;
 
 //IFrames
 if (IFrames) {
-	
-	var proj = instance_nearest(x,y,obj_iceshock)
+
+	/*var proj = instance_nearest(x,y,obj_iceshock)
 	if place_meeting(x,y,proj){
 		instance_destroy(proj.collider)
 		instance_destroy(proj)
-	}
+	}*/
 	
     IFramesTimer -= 1;
     FlashTimer += 1;

@@ -17,6 +17,10 @@ function Erradicate(Attacker,Taker) {
 		audio_play_sound(snd_icespell,1,false)
 		instance_create_layer(Taker.x,Taker.y,Taker.layer,obj_iceflake)
 		instance_destroy(Taker)
+		if (Attacker.LV < 4){
+		par_player.EXP += Taker.EXPDrop
+		par_player.TP += 1.5
+	}
 		}
 		if Taker.sprite_index == spr_iceshoked{
 		instance_destroy(Attacker.collider)
