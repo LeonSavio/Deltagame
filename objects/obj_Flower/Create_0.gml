@@ -1,5 +1,6 @@
 event_inherited()
 
+AIBehavior = FlowerShoot
 cooldown = 0;
 cooldownmax = 120;
 

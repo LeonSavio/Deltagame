@@ -105,3 +105,7 @@ image_blend = c_white
 if Cd > 0{
 Cd--
 }
+
+if self.HP <= 0 {
+	Erradicate(par_player, self)
+}

@@ -5,7 +5,6 @@ function BirdSearching(){
 	targetx = target.x
 	targety = target.y
 
-
 if distance_to_object(target) < (32*Range) && Cd == 0{
 	AIBehavior = BirdFlying
 	Cd = CdMax

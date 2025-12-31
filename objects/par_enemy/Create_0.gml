@@ -35,3 +35,5 @@ trailtime = 0;
 traildelay = 2;
 
 Cd = 0
+
+AIBehavior = Gotoplayer
