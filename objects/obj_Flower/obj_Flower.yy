@@ -9,6 +9,7 @@
   "name":"obj_Flower",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},"propertyId":{"name":"HPMax","path":"objects/par_enemy/par_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},"propertyId":{"name":"Range","path":"objects/par_enemy/par_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"8",},
   ],
   "parent":{
     "name":"Enemies",

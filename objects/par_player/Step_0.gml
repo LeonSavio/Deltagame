@@ -3,19 +3,28 @@ if (KBTimer > 0){
 
 var KBHspd = lengthdir_x(KBSpeed, KBDir);
 var KBVspd = lengthdir_y(KBSpeed, KBDir);
+var sign_h = sign(KBHspd);
+var sign_v = sign(KBVspd);
 
-if (!TileColl(x + (KBHspd*1.5), y)){
-x+= KBHspd;
+repeat (abs(KBHspd)) {
+    if (!place_meeting(x + sign_h, y, obj_wall)) && (!place_meeting(x + sign_h, y, obj_projectfriendly)) {
+        x += sign_h;
+    } else {
+        break;
+    }
 }
-if (!TileColl(x, y + (KBVspd*1.5))){
-y+= KBVspd
+
+
+
+repeat (abs(KBVspd)) {
+    if (!place_meeting(x, y + sign_v, obj_wall)) && (!place_meeting(x, y + sign_v, obj_projectfriendly))  {
+        y += sign_v;
+    } else {
+        break;
+    }
 }
-if (!place_meeting(x + (KBHspd*1.5), y, obj_wall)) || !place_meeting(x + (KBHspd*1.5), y, obj_projectfriendly){
-x+= KBHspd;
-}
-if (!place_meeting(x, y + (KBVspd*1.5), obj_wall))  || !place_meeting(x, y + (KBVspd*1.5), obj_projectfriendly){
-y+= KBVspd
-}
+
+
 KBTimer -= 1;
 KBSpeed *= 0.85;
 

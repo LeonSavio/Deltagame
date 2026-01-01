@@ -18,15 +18,7 @@ var inputDirection = point_direction(0,0, rightk - leftk, downk - upk);
 var inputMagnitude = (rightk - leftk != 0) || (downk - upk != 0);
 
 //colisões de movimentação
-if TileColl(x+hspd, y){
-	hspd = 0;
-}
-
-if TileColl(x, y+vspd){
-	vspd = 0;
-}
-
-if place_meeting(x+hspd, y, obj_wall) || place_meeting(x, y+vspd, obj_projectfriendly){
+if place_meeting(x+hspd, y, obj_wall) || place_meeting(x+hspd, y, obj_projectfriendly){
 	hspd = 0;
 }
 

@@ -14,18 +14,33 @@ if place_meeting(x,y,obj_PlayerColl){
 //Knockback
 if (KBTimer > 0){
 
-KBHspd = lengthdir_x(KBSpeed, KBDir);
-KBVspd = lengthdir_y(KBSpeed, KBDir);
+var KBHspd = lengthdir_x(KBSpeed, KBDir);
+var KBVspd = lengthdir_y(KBSpeed, KBDir);
+var sign_h = sign(KBHspd);
+var sign_v = sign(KBVspd);
 
-if (!TileColl(x + KBHspd, y) && (!place_meeting(x + KBHspd, y, par_enemy))){
-x+= KBHspd;
+repeat (abs(KBHspd)) {
+    if (!place_meeting(x + sign_h, y, obj_wall)) && (!place_meeting(x + sign_h, y, obj_projectfriendly)) {
+        x += sign_h;
+    } else {
+        break;
+    }
 }
-if (!TileColl(x, y + KBVspd)) && (!place_meeting(x, y + KBVspd, par_enemy)){
-y+= KBVspd
+
+
+
+repeat (abs(KBVspd)) {
+    if (!place_meeting(x, y + sign_v, obj_wall)) && (!place_meeting(x, y + sign_v, obj_projectfriendly))  {
+        y += sign_v;
+    } else {
+        break;
+    }
 }
+
 
 KBTimer -= 1;
 KBSpeed *= 0.85;
+
 }
 
 //IFrames

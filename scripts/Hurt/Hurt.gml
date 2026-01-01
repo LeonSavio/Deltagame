@@ -4,7 +4,6 @@ function Hurt(Attacker, Enemy, KBForce){
 	if Attacker.sprite_index == spr_iceshock{
 	Enemy.HP -= Attacker.ATK
 	Enemy.Freezing = 65;
-	show_debug_message(Enemy.HP)
 	} 
 	if Attacker.sprite_index == spr_fireball{
 	Enemy.Burning += 1

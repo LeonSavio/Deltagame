@@ -1,6 +1,6 @@
 //Cria obj_PlayerColl e vincula ao Player que ela pertence
 collider = instance_create_layer(x, y, "CollisionPlayer", obj_PlayerColl);
-collider.owner = id;
+collider.owner = self;
 
 //Informações de Speed e Animação
 direction = 0;
