@@ -5,6 +5,7 @@ function LightUp(){
 	rudebuster.LV = self.LV
 	rudebuster.ATK = self.ATK
 	rudebuster.KBForce = self.KBForce
+	rudebuster.Magic = self.Magic
 	rudebuster.image_angle = (round(self.direction/90)*90);
 	rudebuster.Dir = round(self.direction/90); 
 	rudebuster.spd = 9;

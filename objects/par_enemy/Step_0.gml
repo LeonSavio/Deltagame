@@ -90,7 +90,8 @@ spd = spdbase/2
 
 if Burning > 0{
 Burning -= 1/(300-(Burning*20))
-HP -= (0.25/30)*Burning
+HP -= (0.25/30)*Burning;
+show_debug_message(Burning);
 
 if HP <= 0 {
 	Erradicate(par_player, self)
@@ -123,6 +124,8 @@ Cd--
 
 if instance_number(par_player) > _PlayersStarted{
 	HP += HPMax*(instance_number(par_player)-0.5)
-	spdbase += 0.3*(instance_number(par_player))
+	spdbase += 0.08*(instance_number(par_player))
 	_PlayersStarted	= instance_number(par_player)
+	
 }
+

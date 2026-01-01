@@ -6,7 +6,7 @@ function Hurt(Attacker, Enemy, KBForce){
 	Enemy.Freezing = 65;
 	} 
 	if Attacker.sprite_index == spr_fireball{
-	Enemy.Burning += 1
+	Enemy.Burning += (Attacker.Magic/2)-0.5
 	}
 	if Attacker.sprite_index != spr_iceshock &&  Attacker.sprite_index != spr_fireball{
 	Enemy.HP -= Attacker.ATK
@@ -14,7 +14,7 @@ function Hurt(Attacker, Enemy, KBForce){
 	if Enemy.HP < 0 {
 	Erradicate(Attacker,Enemy)
 	}
-	Hurted(Attacker, KBForce, 10, 30)
+	Hurted(Attacker, KBForce, 10, 30-2*instance_number(par_player))
 	audio_play_sound(snd_damage,0,false)
 	} if (Attacker.LV < Enemy.LVNeeded) {
 		audio_play_sound(snd_strikemetal,0,false)
