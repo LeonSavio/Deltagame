@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_bluebirdflying",
+  "%Name":"spr_bluebirdstunned",
   "bboxMode":2,
   "bbox_bottom":13,
   "bbox_left":4,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"82c521b1-1220-433f-b2b7-128fab1ec1fb","name":"82c521b1-1220-433f-b2b7-128fab1ec1fb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"d4bf9b2a-0d09-43ef-abe3-91af49c29936","name":"d4bf9b2a-0d09-43ef-abe3-91af49c29936","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a708266-eed1-413f-824f-d3890f350752","name":"7a708266-eed1-413f-824f-d3890f350752","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8b357f9f-5f3a-4b50-9495-3fd2730682af","name":"8b357f9f-5f3a-4b50-9495-3fd2730682af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -22,7 +22,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"f6d6f0af-5685-4ef7-89c3-9d894d747ce5","blendMode":0,"displayName":"default","isLocked":false,"name":"f6d6f0af-5685-4ef7-89c3-9d894d747ce5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_bluebirdflying",
+  "name":"spr_bluebirdstunned",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_bluebirdflying",
+    "%Name":"spr_bluebirdstunned",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_bluebirdflying",
+    "name":"spr_bluebirdstunned",
     "playback":1,
     "playbackSpeed":3.0,
     "playbackSpeedType":0,
@@ -72,11 +72,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"82c521b1-1220-433f-b2b7-128fab1ec1fb","path":"sprites/spr_bluebirdflying/spr_bluebirdflying.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3e1dd2a5-9228-4e1a-8e32-dbd5b5d6c602","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7a708266-eed1-413f-824f-d3890f350752","path":"sprites/spr_bluebirdstunned/spr_bluebirdstunned.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"05894e10-6002-4608-a9eb-b3ada4800c62","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d4bf9b2a-0d09-43ef-abe3-91af49c29936","path":"sprites/spr_bluebirdflying/spr_bluebirdflying.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e11feb86-d55a-48e6-b8ff-92dbfe3066da","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b357f9f-5f3a-4b50-9495-3fd2730682af","path":"sprites/spr_bluebirdstunned/spr_bluebirdstunned.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"faafd323-f319-488d-935b-5aee813d0719","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
