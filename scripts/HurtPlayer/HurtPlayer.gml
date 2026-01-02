@@ -5,7 +5,9 @@ function HurtPlayer(Attacker, Enemy){
 	audio_play_sound(snd_hurt,0,false)
 	}
 	if (Enemy.HP <= 0){
-		room_goto(rm_Gameover)
+		instance_destroy(par_player)
+		var target = (rm_Gameover)
+		TransitionStart(target, seq_fadeout, seq_fadein)
 		
 }
 }

@@ -118,6 +118,7 @@
     {"id":{"name":"EnemyAttackHit","path":"scripts/EnemyAttackHit/EnemyAttackHit.yy",},},
     {"id":{"name":"Erradicate","path":"scripts/Erradicate/Erradicate.yy",},},
     {"id":{"name":"FlowerShoot","path":"scripts/FlowerShoot/FlowerShoot.yy",},},
+    {"id":{"name":"GlobalVar","path":"scripts/GlobalVar/GlobalVar.yy",},},
     {"id":{"name":"Gotoplayer","path":"scripts/Gotoplayer/Gotoplayer.yy",},},
     {"id":{"name":"HealPrayer","path":"scripts/HealPrayer/HealPrayer.yy",},},
     {"id":{"name":"Hurt","path":"scripts/Hurt/Hurt.yy",},},

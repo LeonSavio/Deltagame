@@ -23,7 +23,9 @@ if confirmk {
 		switch(pos){
 			//Retry
 			case 0: 
-			game_restart(); break;
+			var target = rm_TitleScreen
+			TransitionStart(target,seq_fadeout, seq_fadein);
+			 break;
 			//Giveup
 			case 1:  
 			game_end(); break;
