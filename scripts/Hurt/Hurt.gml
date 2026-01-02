@@ -14,7 +14,7 @@ function Hurt(Attacker, Enemy, KBForce){
 	if Enemy.HP < 0 {
 	Erradicate(Attacker,Enemy)
 	}
-	Hurted(Attacker, KBForce, 10, 30-2*instance_number(par_player))
+	Hurted(Attacker, KBForce, 10, 30-(6*instance_number(par_player)))
 	audio_play_sound(snd_damage,0,false)
 	} if (Attacker.LV < Enemy.LVNeeded) {
 		audio_play_sound(snd_strikemetal,0,false)
