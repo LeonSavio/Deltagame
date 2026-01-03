@@ -3,6 +3,7 @@
   "%Name":"obj_hero",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_hero",
@@ -13,6 +14,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"HPMax","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"taughtaudio","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.0",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"KBForce","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"8",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_player","path":"objects/par_player/par_player.yy",},"propertyId":{"name":"EXP","path":"objects/par_player/par_player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Heroes",

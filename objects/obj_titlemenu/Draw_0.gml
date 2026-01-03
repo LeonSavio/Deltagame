@@ -1,6 +1,3 @@
-
-//draw_sprite_ext(sprite_index, image_index, room_width/2, room_height/2, width/sprite_width, height/sprite_height,0,c_white, 1);
-
 if menu_level != 2{
 x = room_width/2
 y = (room_height/2)

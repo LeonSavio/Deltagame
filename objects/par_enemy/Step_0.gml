@@ -20,7 +20,7 @@ var sign_h = sign(KBHspd);
 var sign_v = sign(KBVspd);
 
 repeat (abs(KBHspd)) {
-    if (!place_meeting(x + sign_h, y, obj_wall)) && (!place_meeting(x + sign_h, y, obj_projectfriendly)) {
+    if (!place_meeting(x + sign_h, y, [obj_wall, par_enemy, obj_projectfriendly])) {
         x += sign_h;
     } else {
         break;
@@ -30,7 +30,7 @@ repeat (abs(KBHspd)) {
 
 
 repeat (abs(KBVspd)) {
-    if (!place_meeting(x, y + sign_v, obj_wall)) && (!place_meeting(x, y + sign_v, obj_projectfriendly))  {
+    if (!place_meeting(x, y + sign_v, [obj_wall, par_enemy, obj_projectfriendly])) {
         y += sign_v;
     } else {
         break;

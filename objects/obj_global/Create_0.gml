@@ -1,12 +1,10 @@
-if (instance_number(obj_hud) > 1) {
-    instance_destroy();
-}
+
 
 //Colisão
 global.tilemap_collision = layer_tilemap_get_id("Collisions");
 //Tempo de piscada do Iframe
 global.flash_bliking = 4;
-global.show_hp = true
+global.show_hp = false
 
 //Controles gerais
 global.controls = {

@@ -58,33 +58,11 @@ if EXP >= NextLevelEXP && LV != 4{
 }
 
 if instance_exists(obj_hud){
-if Player == 1{
-	obj_hud.PlayerOneHp = HP;
-	obj_hud.PlayerOneMaxHp = HPMax;
-	obj_hud.PlayerOneExp = EXP;
-	obj_hud.PlayerOneExpNext = NextLevelEXP;
-	obj_hud.PlayerOneLV = LV;
-	obj_hud.TpOne = TP;
-	obj_hud.TPVisible1 = false
-}
-
-if Player == 2{
-	obj_hud.PlayerTwoHp = HP;
-	obj_hud.PlayerTwoMaxHp = HPMax;
-	obj_hud.PlayerTwoExp = EXP;
-	obj_hud.PlayerTwoExpNext= NextLevelEXP;
-	obj_hud.PlayerTwoLV = LV;
-	obj_hud.TpTwo = TP;
-	obj_hud.TPVisible2 = false
-}
-
-if Player == 3{
-	obj_hud.PlayerThreeHp = HP;
-	obj_hud.PlayerThreeMaxHp = HPMax;
-	obj_hud.PlayerThreeExp = EXP;
-	obj_hud.PlayerThreeExpNext= NextLevelEXP;
-	obj_hud.PlayerThreeLV = LV;
-	obj_hud.TpThree = TP;
-	obj_hud.TPVisible3 = false
-}
+	obj_hud.HP[Player-1] = HP;
+	obj_hud.MaxHP[Player-1] = HPMax;
+	obj_hud.Exp[Player-1] = EXP;
+	obj_hud.ExpNext[Player-1] = NextLevelEXP;
+	obj_hud.LV[Player-1] = LV;
+	obj_hud.TP[Player-1] = TP;
+	obj_hud.TPVisible[Player-1] = false
 }

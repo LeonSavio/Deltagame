@@ -67,10 +67,5 @@ if _menulevel != menu_level {pos = 0}
 
 }
 
-
-layer_set_visible("PlayerOne",false)
-layer_set_visible("PlayerTwo",false)
-
-
 obj_soul.targetx = x+borderspace-(12*(string_length(options[menu_level][pos]))+1)
 obj_soul.targety = y + (textspace * pos)

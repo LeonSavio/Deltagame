@@ -1,79 +1,45 @@
-PlayerOneHp = 0;
-PlayerOneMaxHp = 0;
-PlayerOneLV = 1;
-PlayerTwoHp = 0;
-PlayerTwoMaxHp = 0;
-PlayerThreeHp = 0;
-PlayerThreeMaxHp = 0;
-PlayerOneExpNext = 0;
-PlayerOneExp = 0;
-PlayerTwoExp = 0;
-PlayerTwoExpNext= 0;
-PlayerTwoLV = 1;
-PlayerThreeExp = 0;
-PlayerThreeExpNext= 0;
-PlayerThreeLV = 1;
-TpOne = 0;
-TpTwo = 0;
-TpThree = 0;
-TPVisible1 = false;
-TPVisible2 = false;
-TPVisible3 = false;
-ColorOne = c_white;
-ColorTwo = c_white;
-ColorThree = c_white;
+PlayerMax = 3
 
-PlayerPanel = layer_get_flexpanel_node("PlayerOne");
-PlayerPanel2 = layer_get_flexpanel_node("PlayerTwo");
-PlayerPanel3 = layer_get_flexpanel_node("PlayerThree");
+HP = array_create(PlayerMax, 0)
+LV = array_create(PlayerMax, 1)
+MaxHP = array_create(PlayerMax, 0)
+Exp = array_create(PlayerMax, 0)
+ExpNext = array_create(PlayerMax, 0)
+Color = array_create(PlayerMax, c_white)
+TP = array_create(PlayerMax, 0)
+TPVisible = array_create(PlayerMax, false)
+Hud = array_create(PlayerMax)
 
-HpPanel = flexpanel_node_get_child(PlayerPanel, "HPBar");
-HpStruct = flexpanel_node_get_struct(HpPanel);
-HpBar = HpStruct.layerElements[0].elementId;
+for (var i = 0; i < PlayerMax; i++){
+	var idx = string(i+1)
+	
+	//Cria struct
+	Hud[i] = {};
+	
+	//Player Layer
+	Hud[i].Panel = layer_get_flexpanel_node("Player"+idx);
+	
+	//HP
+	var HpPanel = flexpanel_node_get_child(Hud[i].Panel, "HPBar")
+	var HpStruct = flexpanel_node_get_struct(HpPanel);
+	Hud[i].HP = HpStruct.layerElements[0].elementId;
+	
+	//Exp & LV
+	var ExpPanel = flexpanel_node_get_child(Hud[i].Panel, "EXPBar");
+	var ExpStruct = flexpanel_node_get_struct(ExpPanel);
+	Hud[i].Exp = ExpStruct.layerElements[0].elementId;
+	Hud[i].LV = ExpStruct.layerElements[2].elementId;
+	
+	//TP
+	Hud[i].PanelTP = layer_get_flexpanel_node("TpBar"+idx);
+	var Bar = flexpanel_node_get_child(Hud[i].PanelTP, "Bar");
+	var Barra = flexpanel_node_get_struct(Bar);
+	Hud[i].TP = Barra.layerElements[1].elementId;
+	
+}
 
-ExpPanel = flexpanel_node_get_child(PlayerPanel, "EXPBar");
-ExpStruct = flexpanel_node_get_struct(ExpPanel);
-ExpBar = ExpStruct.layerElements[0].elementId;
-ExpBarEmp = ExpStruct.layerElements[1].elementId;
-LV = ExpStruct.layerElements[2].elementId;
-layer_set_visible("PlayerOne",true)
-
-HpPanel2 = flexpanel_node_get_child(PlayerPanel2, "HPBar2");
-HpStruct2 = flexpanel_node_get_struct(HpPanel2);
-HpBar2 = HpStruct2.layerElements[0].elementId;
-
-ExpPanel2 = flexpanel_node_get_child(PlayerPanel2, "EXPBar2");
-ExpStruct2 = flexpanel_node_get_struct(ExpPanel2);
-ExpBar2 = ExpStruct2.layerElements[0].elementId;
-ExpBarEmp2 = ExpStruct2.layerElements[1].elementId;
-LV2 = ExpStruct2.layerElements[2].elementId;
-
-HpPanel3= flexpanel_node_get_child(PlayerPanel3, "HPBar3");
-HpStruct3 = flexpanel_node_get_struct(HpPanel3);
-HpBar3 = HpStruct3.layerElements[0].elementId;
-
-ExpPanel3 = flexpanel_node_get_child(PlayerPanel3, "EXPBar3");
-ExpStruct3= flexpanel_node_get_struct(ExpPanel3);
-ExpBar3 = ExpStruct3.layerElements[0].elementId;
-ExpBarEmp3 = ExpStruct3.layerElements[1].elementId;
-LV3 = ExpStruct3.layerElements[2].elementId;
-
-TP1 = layer_get_flexpanel_node("TpBar1");
-Bar = flexpanel_node_get_child(TP1, "Bar");
-Barra = flexpanel_node_get_struct(Bar);
-BarraTP = Barra.layerElements[1].elementId;
-
-TP2 = layer_get_flexpanel_node("TpBar2");
-Bar2 = flexpanel_node_get_child(TP2, "Bar");
-Barra2 = flexpanel_node_get_struct(Bar2);
-BarraTP2 = Barra2.layerElements[1].elementId;
-
-TP3 = layer_get_flexpanel_node("TpBar3");
-Bar3 = flexpanel_node_get_child(TP3, "Bar");
-Barra3 = flexpanel_node_get_struct(Bar3);
-BarraTP3 = Barra2.layerElements[1].elementId;
-
+//Mensagem de PRESS
 Press = layer_get_flexpanel_node("Press");
 Key = flexpanel_node_get_child(Press, "Key");
 keysla = flexpanel_node_get_struct(Key);
-PText = Barra.layerElements[0].elementId;
+PText = keysla.layerElements[0].elementId;
