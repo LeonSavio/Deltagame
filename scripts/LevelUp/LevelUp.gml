@@ -5,7 +5,7 @@ function LevelUp(){
 		case 1: 
 		self.EXP = 0;
 		self.LV += 1
-		self.NextLevelEXP = 15;
+		self.NextLevelEXP = 20;
 		self.ATK += 0.3
 		self.HP += 1
 		self.TP += 1
@@ -15,7 +15,7 @@ function LevelUp(){
 		case 2: 
 		self.EXP = 0;
 		self.LV += 1
-		self.NextLevelEXP = 18;
+		self.NextLevelEXP = 35;
 		self.ATK += 0.5
 		self.HP += 2
 		self.TP += 1

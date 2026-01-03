@@ -10,7 +10,7 @@ if place_meeting(x,y,par_player){
 }
 
 if targetx != undefined && targety != undefined && alarmi == true{
-alarm[0] = room_speed*spdball;
+alarm[0] = 60*spdball;
 alarmi = false;
 }
 

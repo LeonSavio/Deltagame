@@ -125,7 +125,6 @@
     {"id":{"name":"Erradicate","path":"scripts/Erradicate/Erradicate.yy",},},
     {"id":{"name":"FlowerShoot","path":"scripts/FlowerShoot/FlowerShoot.yy",},},
     {"id":{"name":"FlowerSummon","path":"scripts/FlowerSummon/FlowerSummon.yy",},},
-    {"id":{"name":"FlowerSummon2","path":"scripts/FlowerSummon2/FlowerSummon2.yy",},},
     {"id":{"name":"GlobalVar","path":"scripts/GlobalVar/GlobalVar.yy",},},
     {"id":{"name":"Gotoplayer","path":"scripts/Gotoplayer/Gotoplayer.yy",},},
     {"id":{"name":"HealPrayer","path":"scripts/HealPrayer/HealPrayer.yy",},},

@@ -29,7 +29,7 @@ function RudeBuster(){
 	}
 	
 	//avisa
-	if RudePower = 45 {
+	if RudePower = 46 {
 		audio_play_sound(snd_rudebuster_prepared,0,false)
 	}
 	
@@ -50,7 +50,7 @@ function RudeBuster(){
 				rudebuster.image_yscale = 1.5;
 				rudebuster.spd = 12;
 				rudebuster.ATK = (self.ATK + self.Magic)*3
-				audio_play_sound(snd_redbuster_swing,0,false,0,0,-2)
+				audio_play_sound(snd_redbuster_swing,0,false,0,0,-3)
 				rudebuster.KBForce = 12;
 			} else {
 			
@@ -65,7 +65,7 @@ function RudeBuster(){
 					rudebuster.sprite_index = atk_rudebuster;
 					rudebuster.spd = 7;
 					rudebuster.ATK = (self.ATK + (self.Magic/1.5))*1.2
-					audio_play_sound(snd_rudebuster_swing,0,false)
+					audio_play_sound(snd_rudebuster_swing,0,false,0,0,random_range(0.9,1.1))
 					rudebuster.KBForce = 7;
 				}
 				if RudePower >= 46{
@@ -73,7 +73,7 @@ function RudeBuster(){
 					rudebuster.image_yscale = 1.10;
 					rudebuster.spd = 9;
 					rudebuster.ATK = (self.ATK + self.Magic)*1.8
-					audio_play_sound(snd_redbuster_swing,0,false)
+					audio_play_sound(snd_redbuster_swing,0,false,0,0,random_range(0.7,0.9))
 					rudebuster.KBForce = 8;
 				}
 			

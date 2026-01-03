@@ -14,7 +14,6 @@ global.controls = {
 	Quit: vk_escape,
 }
 
-holdingquit = 0;
 
 global.FullPlayer = false;
 instance_create_layer(x,y,layer,obj_music)
