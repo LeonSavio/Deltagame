@@ -1,4 +1,5 @@
 function Erradicate(Attacker,Taker) {
+	if(instance_exists(par_player)) {
 	if (Attacker.LV >= Taker.LVNeeded){
 		if (Taker.sprite_index != spr_sparkles){
 	if Attacker.sprite_index != spr_iceshock{
@@ -33,4 +34,5 @@ function Erradicate(Attacker,Taker) {
 		if !audio_is_playing(snd_strikemetal){
 		audio_play_sound(snd_strikemetal,0,false)}
 	}
+}
 }
