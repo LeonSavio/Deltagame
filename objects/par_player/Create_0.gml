@@ -86,4 +86,8 @@ NextLevelEXP = 3;
 
 division = 0;
 
-
+if instance_exists(obj_cameraalt){
+view_visible[Player-1] = true
+obj_camera.target[Player-1] = self
+camera_set_view_target(global.Cameras[Player-1],self)
+}

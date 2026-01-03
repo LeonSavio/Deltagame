@@ -72,6 +72,7 @@
     {"id":{"name":"obj_cactus","path":"objects/obj_cactus/obj_cactus.yy",},},
     {"id":{"name":"obj_cactus2","path":"objects/obj_cactus2/obj_cactus2.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_cameraalt","path":"objects/obj_cameraalt/obj_cameraalt.yy",},},
     {"id":{"name":"obj_deer","path":"objects/obj_deer/obj_deer.yy",},},
     {"id":{"name":"obj_fireball","path":"objects/obj_fireball/obj_fireball.yy",},},
     {"id":{"name":"obj_Flower","path":"objects/obj_Flower/obj_Flower.yy",},},
