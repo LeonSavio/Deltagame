@@ -2,10 +2,11 @@ collider = instance_create_layer(x, y, layer, obj_RudeColl);
 collider.owner = id;
 collider.image_xscale = 1;
 collider.image_yscale = 1;
+collision = true
 
 lifetimer = 25;
 Attacker = noone;
-spd = 4;
+spd = 5;
 Dir = 0;
 HitByAttack = -1;
 LV = 0;
@@ -16,8 +17,8 @@ EXP = 0;
 trailtime = 0;
 traildelay = 4;
 
-targetx = 0;
-targety = 0;
+targetx = undefined;
+targety = undefined;
 image_xscale = 2;
 image_yscale = 2;
 

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SequenceTest",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SequenceTest",
+  "parent":{
+    "name":"AIBehaviours",
+    "path":"folders/Scripts/AIBehaviours.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
