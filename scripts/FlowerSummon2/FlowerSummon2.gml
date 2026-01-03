@@ -9,10 +9,11 @@ if cooldown <= 0{
 	if point_distance(x,y,targetx,targety) < 32*Range{
 	cooldown = CdMax
 		for (var i = 0; i < 8; i++){
-		var radius = 384
-		fire[i] = instance_create_layer(targetx+lengthdir_x(radius,45*i),targety+lengthdir_y(radius,45*i),layer,obj_fireball)
+		var radius = 96
+		fire[i] = instance_create_layer(targetx+lengthdir_x(radius,45*i),targety+lengthdir_y(radius,45*i),layer,obj_fireballalt)
+		fire[i].spdball = (i+1)/2
 		fire[i].collision = false
-		fire[i].lifetimer = 60
+		fire[i].lifetimer = 60*(i+1)
 		fire[i].targetx = targetx+lengthdir_x(0,45*i)
 		fire[i].targety = targety+lengthdir_y(0,45*i)	
 		}

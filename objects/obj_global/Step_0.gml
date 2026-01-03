@@ -54,11 +54,11 @@ if keyboard_check_pressed(vk_f3){
 }
 
 if keyboard_check_pressed(vk_f9){
-	if (global.show_hp) == false{
-		 (global.show_hp) = true
-	}
-	if (global.show_hp) == true{
-		 (global.show_hp) = false
+	if global.show_hp == false{
+		 global.show_hp = true
+	} else
+	if global.show_hp == true{
+		 global.show_hp = false
 	}
 }
 

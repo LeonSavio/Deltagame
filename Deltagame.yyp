@@ -77,6 +77,7 @@
     {"id":{"name":"obj_cameraalt","path":"objects/obj_cameraalt/obj_cameraalt.yy",},},
     {"id":{"name":"obj_deer","path":"objects/obj_deer/obj_deer.yy",},},
     {"id":{"name":"obj_fireball","path":"objects/obj_fireball/obj_fireball.yy",},},
+    {"id":{"name":"obj_fireballalt","path":"objects/obj_fireballalt/obj_fireballalt.yy",},},
     {"id":{"name":"obj_Flower","path":"objects/obj_Flower/obj_Flower.yy",},},
     {"id":{"name":"obj_Floweralt","path":"objects/obj_Floweralt/obj_Floweralt.yy",},},
     {"id":{"name":"obj_Floweralt2","path":"objects/obj_Floweralt2/obj_Floweralt2.yy",},},

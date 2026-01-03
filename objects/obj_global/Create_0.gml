@@ -4,7 +4,7 @@
 global.tilemap_collision = layer_tilemap_get_id("Collisions");
 //Tempo de piscada do Iframe
 global.flash_bliking = 4;
-global.show_hp = false
+global.show_hp = true
 
 //Controles gerais
 global.controls = {

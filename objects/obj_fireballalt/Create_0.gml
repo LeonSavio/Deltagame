@@ -4,15 +4,17 @@ collider.image_xscale = 1;
 collider.image_yscale = 1;
 collision = true
 
-lifetimer = 50;
+lifetimer = 200;
 Attacker = noone;
-spd = 5;
+spd = 6;
 Dir = 0;
 HitByAttack = -1;
 LV = 0;
 ATK = 1;
 KBForce = 0;
 EXP = 0;
+alarmi = true;
+spdball = 1;
 
 trailtime = 0;
 traildelay = 4;

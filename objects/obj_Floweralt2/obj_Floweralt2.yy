@@ -10,7 +10,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},"propertyId":{"name":"HPMax","path":"objects/par_enemy/par_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"40",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},"propertyId":{"name":"Range","path":"objects/par_enemy/par_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},"propertyId":{"name":"CdMax","path":"objects/par_enemy/par_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_enemy","path":"objects/par_enemy/par_enemy.yy",},"propertyId":{"name":"CdMax","path":"objects/par_enemy/par_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"300",},
   ],
   "parent":{
     "name":"Enemies",

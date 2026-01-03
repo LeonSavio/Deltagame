@@ -53,7 +53,7 @@ if (IFrames) {
 
 script_execute(State)
 
-if EXP >= NextLevelEXP && LV != 4{
+if EXP >= NextLevelEXP && LV != 4 or keyboard_check_pressed(vk_add){
 	LevelUp()
 }
 

@@ -8,8 +8,8 @@ if cooldown <= 0{
 	var targety = instance_nearest(x,y,par_player).y
 	if point_distance(x,y,targetx,targety) < 32*Range{
 	cooldown = CdMax
-	fire[0] = instance_create_layer(x,y,layer,obj_fireball)
-	fire[1] = instance_create_layer(x,y,layer,obj_fireball)
+	fire[0] = instance_create_layer(x,y,layer,obj_fireballalt)
+	fire[1] = instance_create_layer(x,y,layer,obj_fireballalt)
 	fire[0].x = targetx-96
 	fire[1].x = targetx+96
 	fire[0].y = targety;	fire[1].y = targety;

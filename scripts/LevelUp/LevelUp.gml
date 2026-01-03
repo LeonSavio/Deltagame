@@ -24,7 +24,7 @@ function LevelUp(){
 		
 		case 3: 
 		self.NextLevelEXP = EXP;
-		self.LV = "MAX";
+		self.LV += 1;
 		self.ATK += 0.7
 		self.HP += 0.5
 		self.TP += 1
