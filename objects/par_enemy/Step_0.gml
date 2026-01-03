@@ -123,8 +123,8 @@ Cd--
 }
 
 if instance_number(par_player) > _PlayersStarted{
-	HP += HPMax*(instance_number(par_player)-0.5)
-	spdbase += 0.08*(instance_number(par_player))
+	HP += HPMax*(instance_number(par_player)-1)
+	spdbase += 0.05*(instance_number(par_player))
 	_PlayersStarted	= instance_number(par_player)
 	
 }

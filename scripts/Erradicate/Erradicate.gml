@@ -10,7 +10,7 @@ function Erradicate(Attacker,Taker) {
 	Taker.State = "dying";
 	if (Attacker.LV < 4){
 	par_player.EXP += Taker.EXPDrop
-	par_player.TP += 2
+	par_player.TP += 3
 	}
 	} else {
 		if Taker.sprite_index != spr_iceshoked{
@@ -19,7 +19,7 @@ function Erradicate(Attacker,Taker) {
 		instance_destroy(Taker)
 		if (Attacker.LV < 4){
 		par_player.EXP += Taker.EXPDrop
-		par_player.TP += 1.5
+		par_player.TP += 2.5
 	}
 		}
 		if Taker.sprite_index == spr_iceshoked{

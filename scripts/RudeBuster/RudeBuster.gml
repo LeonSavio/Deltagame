@@ -59,7 +59,7 @@ function RudeBuster(){
 					rudebuster.image_yscale = 0.90;
 					rudebuster.spd = 6;
 					rudebuster.ATK = (self.ATK + (self.Magic/2))*0.6
-					rudebuster.KBForce = 5;
+					rudebuster.KBForce = 4;
 				}
 				if RudePower >= 20 && RudePower < 46{
 					rudebuster.sprite_index = atk_rudebuster;

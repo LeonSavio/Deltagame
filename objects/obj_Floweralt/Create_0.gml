@@ -1,6 +1,6 @@
 event_inherited()
 
-AIBehavior = FlowerSummon
+AIBehavior = FlowerSummon0
 cooldown = 0;
 
 spr_idle = spr_floweralt;
