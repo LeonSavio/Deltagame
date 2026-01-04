@@ -1,9 +1,9 @@
 function HealPrayer(){
-	if self.TP < 18{
+	if self.TP < 20{
 	self.State = PlayerStateFree
 	}
-	if keyboard_check(Confirm) && self.TP >= 18{
-	self.TP -= 18
+	if keyboard_check(Confirm) && self.TP >= 20{
+	self.TP -= 20
 	var rudebuster = instance_create_layer(self.x,self.y,self.layer, obj_HealPrayerColl)
 	rudebuster.owner = self;
 	rudebuster.LV = self.LV

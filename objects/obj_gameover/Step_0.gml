@@ -25,6 +25,7 @@ if confirmk {
 			case 0: 
 			var target = rm_TitleScreen
 			TransitionStart(target,seq_fadeout, seq_fadein);
+			global.FullPlayer = false;
 			 break;
 			//Giveup
 			case 1:  
@@ -35,8 +36,14 @@ if cancelk{
 	pos = 1
 }
 
-layer_set_visible("PlayerOne",false)
-layer_set_visible("PlayerTwo",false)
+for (var i = 0; i < 3; i++){
+	
+	var idx = string(i+1)
+	
+	layer_set_visible("Player"+idx,false)
+	layer_set_visible("TpBar"+idx,false)
+
+}
 
 if(obj_soul.canmove == true){
 	obj_soul.targetx = x+(256*pos)-128-(16*(string_length(options[pos]))+1)

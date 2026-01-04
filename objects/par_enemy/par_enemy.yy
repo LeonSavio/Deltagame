@@ -39,6 +39,8 @@
     {"$GMObjectProperty":"v2","%Name":"EXPDrop","filters":[],"listItems":[],"multiselect":false,"name":"EXPDrop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"Range","filters":[],"listItems":[],"multiselect":false,"name":"Range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"CdMax","filters":[],"listItems":[],"multiselect":false,"name":"CdMax","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"KBImune","filters":[],"listItems":[],"multiselect":false,"name":"KBImune","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"AIBehavior","filters":[],"listItems":[],"multiselect":false,"name":"AIBehavior","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Gotoplayer","path":"scripts/Gotoplayer/Gotoplayer.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Gotoplayer","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -1,5 +1,6 @@
 //Knockback
 if (KBTimer > 0){
+sprite_index = spr_hurt
 
 var KBHspd = lengthdir_x(KBSpeed, KBDir);
 var KBVspd = lengthdir_y(KBSpeed, KBDir);
@@ -32,6 +33,10 @@ KBSpeed *= 0.85;
 
 if TP > 39{
 	TP = 39
+}
+
+if HP > HPMax{
+	HP = HPMax
 }
 
 //IFrames

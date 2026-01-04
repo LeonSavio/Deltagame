@@ -41,7 +41,7 @@
     "path":"folders/Sequences/Transitions.yy",
   },
   "playback":0,
-  "playbackSpeed":60.0,
+  "playbackSpeed":90.0,
   "playbackSpeedType":0,
   "resourceType":"GMSequence",
   "resourceVersion":"2.0",

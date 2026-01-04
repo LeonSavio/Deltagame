@@ -11,7 +11,7 @@ function Erradicate(Attacker,Taker) {
 	Taker.State = "dying";
 	if (Attacker.LV < 4){
 	par_player.EXP += Taker.EXPDrop
-	par_player.TP += 3
+	par_player.TP += 2
 	}
 	} else {
 		if Taker.sprite_index != spr_iceshoked{
@@ -20,12 +20,14 @@ function Erradicate(Attacker,Taker) {
 		instance_destroy(Taker)
 		if (Attacker.LV < 4){
 		par_player.EXP += Taker.EXPDrop
-		par_player.TP += 2.5
+		par_player.TP += 1.5
 	}
 		}
 		if Taker.sprite_index == spr_iceshoked{
 		instance_destroy(Attacker.collider)
 		instance_destroy(Attacker)
+		if !audio_is_playing(snd_strikemetal){
+		audio_play_sound(snd_strikemetal,0,false)}
 		}
 	}
 	}

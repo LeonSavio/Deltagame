@@ -10,3 +10,4 @@ LV = 0;
 ATK = 0;
 KBForce = 0;
 EXP = 0;
+TP = 0;

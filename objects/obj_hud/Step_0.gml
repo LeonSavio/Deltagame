@@ -26,6 +26,10 @@ for (var i = 0; i < PlayerMax; i++){
 	//TP
 	layer_sprite_yscale(Hud[i].TP,TP[i])
 	layer_sprite_blend(Hud[i].TP,Color[i])
+	
+	//skill
+	layer_text_blend(Hud[i].Skill,Color[i]);
+	layer_text_text(Hud[i].Skill,SkillShow[i])
 }
 
 

@@ -3,13 +3,17 @@ function Hurt(Attacker, Enemy, KBForce){
 	if (Attacker.LV >= Enemy.LVNeeded && Enemy.IFrames != true){
 	if Attacker.sprite_index == spr_iceshock{
 	Enemy.HP -= Attacker.ATK
-	Enemy.Freezing = 65;
+	Enemy.Freezing = 45;
+	Attacker.TP += 0.1225
+	Enemy.Cd += 5
 	} 
 	if Attacker.sprite_index == spr_fireball{
 	Enemy.Burning += (Attacker.Magic/2)-0.5
+	Attacker.TP += 0.1
 	}
 	if Attacker.sprite_index != spr_iceshock &&  Attacker.sprite_index != spr_fireball{
 	Enemy.HP -= Attacker.ATK
+	Attacker.TP += 0.2
 	}
 	if Enemy.HP < 0 {
 	Erradicate(Attacker,Enemy)

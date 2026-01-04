@@ -1,11 +1,18 @@
 var confirmk = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter);
 
-if confirmk {
+if confirmk && clicked == false{
 	audio_play_sound(snd_select,0,false);
 	var target = rm_TitleScreen
 	TransitionStart(target,seq_fadeout, seq_fadein);
+	global.FullPlayer = false;	
+	clicked = true;
 }
 
-layer_set_visible("PlayerOne",false)
-layer_set_visible("PlayerTwo",false)
-layer_set_visible("PlayerThree",false)
+for (var i = 0; i < 3; i++){
+	
+	var idx = string(i+1)
+	
+	layer_set_visible("Player"+idx,false)
+	layer_set_visible("TpBar"+idx,false)
+
+}

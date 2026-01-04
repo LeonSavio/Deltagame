@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BirdFly",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BirdFly",
+  "parent":{
+    "name":"AIBehaviours",
+    "path":"folders/Scripts/AIBehaviours.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

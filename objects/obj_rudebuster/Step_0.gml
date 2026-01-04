@@ -36,5 +36,9 @@ if EXP>0{
 Attacker.EXP += EXP
 EXP = 0;
 }
+if TP>0{
+Attacker.TP += TP
+TP = 0;
+}
 
 

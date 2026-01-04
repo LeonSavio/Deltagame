@@ -1,7 +1,7 @@
 if (!ds_exists(HitByAttack, ds_type_list)) HitByAttack = ds_list_create();
 ds_list_clear(HitByAttack)
 
-if (place_meeting(x,y,par_enemy)) {
+if (place_meeting(x,y,[par_enemy,par_plant,obj_ice])) {
 AttackHit(spr_iceshock);
 instance_destroy(collider);
 instance_destroy();
@@ -26,4 +26,8 @@ if Dir == 4{
 if EXP>0{
 Attacker.EXP += EXP
 EXP = 0;
+}
+if TP>0{
+Attacker.TP += TP
+TP = 0;
 }

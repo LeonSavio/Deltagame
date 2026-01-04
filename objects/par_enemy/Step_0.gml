@@ -12,6 +12,7 @@ if place_meeting(x,y,obj_PlayerColl){
 }
 
 //Knockback
+if KBImune == false{
 if (KBTimer > 0){
 
 var KBHspd = lengthdir_x(KBSpeed, KBDir);
@@ -41,6 +42,7 @@ repeat (abs(KBVspd)) {
 KBTimer -= 1;
 KBSpeed *= 0.85;
 
+}
 }
 
 //IFrames
@@ -83,18 +85,18 @@ if (State == "Stunned") {
 
 if Freezing >= 1{
 Freezing--
-spd = spdbase/2
+spd = spdbase/1.8
 } else {
 	spd = spdbase
 }
 
 if Burning > 0{
-Burning -= 1/(300-(Burning*20))
-HP -= (0.25/30)*Burning;
-show_debug_message(Burning);
+Burning -= 1/(250-(Burning*35))
+HP -= (0.15/30)*Burning;
 
 if HP <= 0 {
 	Erradicate(par_player, self)
+	audio_play_sound(snd_badexplosion,0,false)
 } 
 
 image_blend = c_orange

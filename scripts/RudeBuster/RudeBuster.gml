@@ -25,16 +25,18 @@ function RudeBuster(){
 	
 	//segurando
 	if keyboard_check(Confirm){
-		self.RudePower += 1+(self.TP/10);
+		self.RudePower += 1+(self.TP/20);
 	}
 	
 	//avisa
-	if RudePower = 46 {
+	if RudePower >= 46  && played == falses  || TP >= 22  && played == false {
 		audio_play_sound(snd_rudebuster_prepared,0,false)
+		played = true
 	}
 	
 	//soltou
 	if keyboard_check_released(Confirm){
+		played = false
 		var rudebuster = instance_create_layer(self.x,self.y,layer, obj_rudebuster)
 		rudebuster.Attacker = self;
 		rudebuster.LV = self.LV

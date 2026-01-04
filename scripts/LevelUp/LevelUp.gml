@@ -7,6 +7,7 @@ function LevelUp(){
 		self.LV += 1
 		self.NextLevelEXP = 20;
 		self.ATK += 0.3
+		self.HPMax +=1
 		self.HP += 1
 		self.TP += 1
 		self.Magic += 1/3
@@ -17,6 +18,7 @@ function LevelUp(){
 		self.LV += 1
 		self.NextLevelEXP = 35;
 		self.ATK += 0.5
+		self.HPMax +=2
 		self.HP += 2
 		self.TP += 1
 		self.Magic += 1/3
@@ -26,6 +28,7 @@ function LevelUp(){
 		self.NextLevelEXP = EXP;
 		self.LV += 1;
 		self.ATK += 0.7
+		self.HPMax +=0.5
 		self.HP += 0.5
 		self.TP += 1
 		self.Magic += 1/3

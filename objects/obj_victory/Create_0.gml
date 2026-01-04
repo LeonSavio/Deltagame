@@ -5,6 +5,7 @@ borderspace = 16;
 textspace = 32;
 
 pos = 4;
+clicked = false
 
 //Main Menu
 options = ["YOU WON!!!",

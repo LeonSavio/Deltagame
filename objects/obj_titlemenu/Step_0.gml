@@ -10,6 +10,8 @@ if upk || downk {
 	audio_play_sound(snd_menumove,0,false);
 }
 
+op_length = array_length(options[menu_level]);
+
 if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length-1}
 
@@ -38,26 +40,24 @@ switch(menu_level){
 			case 2: 
 			audio_play_sound(snd_error,0,false); break;
 			//Exit
-			case 3: game_end() break;
+			case long[0]: game_end() break;
 		}
 		break;
 		
 	//Settings
 	case 1:
 		switch(pos){
-			//Windowsize
-			case 0: audio_play_sound(snd_error,0,false); break;
 			//Controls
-			case 1: menu_level = 2; audio_play_sound(snd_select,0,false); break;
+			case 0: menu_level = 2; audio_play_sound(snd_select,0,false); break;
 			//Back
-			case 2: menu_level = 0; audio_play_sound(snd_select,0,false); break;
+			case long[1]: menu_level = 0; audio_play_sound(snd_select,0,false); break;
 		}
 		break;
 		
 	case 2:
 		switch(pos){
 			//Back
-			case 21: menu_level = 1; audio_play_sound(snd_select,0,false); break;
+			case long[2]: menu_level = 1; audio_play_sound(snd_select,0,false); break;
 		}
 		break;
 }

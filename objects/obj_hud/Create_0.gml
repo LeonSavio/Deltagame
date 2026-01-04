@@ -9,6 +9,7 @@ Color = array_create(PlayerMax, c_white)
 TP = array_create(PlayerMax, 0)
 TPVisible = array_create(PlayerMax, false)
 Hud = array_create(PlayerMax)
+SkillShow = array_create(PlayerMax, "None")
 
 for (var i = 0; i < PlayerMax; i++){
 	var idx = string(i+1)
@@ -33,8 +34,11 @@ for (var i = 0; i < PlayerMax; i++){
 	//TP
 	Hud[i].PanelTP = layer_get_flexpanel_node("TpBar"+idx);
 	var Bar = flexpanel_node_get_child(Hud[i].PanelTP, "Bar");
+	var SkillName = flexpanel_node_get_child(Hud[i].PanelTP, "SkillName");
+	var Skill = flexpanel_node_get_struct(SkillName)
 	var Barra = flexpanel_node_get_struct(Bar);
 	Hud[i].TP = Barra.layerElements[1].elementId;
+	Hud[i].Skill = Skill.layerElements[0].elementId;
 	
 }
 
