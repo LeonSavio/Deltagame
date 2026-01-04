@@ -72,7 +72,9 @@ if Player == 2{
 	Cancel = vk_shift
 	Taught = ord("T")
 	Camera = ord("M")
+	obj_camera.playerList[Player-1] = self
 	Change= vk_control
+	view_visible[1] = true;
 }
 
 if Player == 3{

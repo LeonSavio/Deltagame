@@ -1,10 +1,11 @@
+for(var i = 0; i < array_length(playerList); ++i) {
+	view_visible[0] = true;
 	
-
-/*if (target != noone){
-	x= (target.x)
-	y= (target.y)
+	var cameraW	= width / clamp(instance_number(par_player),1,2);
+	global.cameras[i] = camera_create_view(0, 0, cameraW, height, 0, playerList[i], -1, -1, cameraW, height)
+	view_set_camera(i, global.cameras[i]);
+	
+	view_xport[i] = cameraW * i;
+	view_wport[i] = cameraW;
+	
 }
-
-camera_set_view_pos(view_camera[0], 
-	x-(camera_get_view_width(view_camera[0])*0.5), 
-	y-(camera_get_view_height(view_camera[0])*0.5))
