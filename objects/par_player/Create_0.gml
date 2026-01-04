@@ -1,3 +1,8 @@
+
+if (!instance_exists(obj_camera)) {
+instance_create_depth(x,y,depth,obj_camera);
+}
+
 //Cria obj_PlayerColl e vincula ao Player que ela pertence
 collider = instance_create_layer(x, y, "CollisionPlayer", obj_PlayerColl);
 collider.owner = self;
@@ -54,7 +59,7 @@ if Player == 1{
 	Taught = ord("V")
 	Camera = ord("N")
 	Change= ord("C")
-	obj_camera.target = self
+	obj_camera.playerList[Player-1] = self
 	global.time = 0
 }
 
@@ -85,3 +90,4 @@ if Player == 3{
 NextLevelEXP = 3;
 
 division = 0;
+
