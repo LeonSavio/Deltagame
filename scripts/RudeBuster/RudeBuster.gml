@@ -29,7 +29,7 @@ function RudeBuster(){
 	}
 	
 	//avisa
-	if RudePower >= 46  && played == falses  || TP >= 22  && played == false {
+	if (RudePower >= 46 && played == false || TP >= 22  && played == false) {
 		audio_play_sound(snd_rudebuster_prepared,0,false)
 		played = true
 	}

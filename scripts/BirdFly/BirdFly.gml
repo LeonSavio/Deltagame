@@ -6,7 +6,7 @@ if distance_to_object(target) < (32*Range) && Cd <= 0{
 
 	if y > originy-32{
 		sprite_index = spr_bluebirdflying
-		y -= random_range(0.1,0.5)
+		y -= 0.5
 		z = originy-y
 	} else {
 	targetx = target.x
@@ -23,7 +23,7 @@ function BirdGo(){
 	y += (targety - y)/(spd*7)
 	
 	if point_distance(x,y,targetx,targety) < 1{
-	originy = y
+	originy = y+32
 	AIBehavior = BirdLand
 	}
 }
@@ -31,8 +31,8 @@ function BirdGo(){
 
 function BirdLand(){
 	Cd = CdMax
-	if y < originy+32{
-		y += random_range(0.1,0.5)
+	if y < originy{
+		y += 0.5
 		z = originy-y
 	} else {
 	sprite_index = spr_bluebird

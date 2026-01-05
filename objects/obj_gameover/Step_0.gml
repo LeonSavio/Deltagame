@@ -23,7 +23,8 @@ if confirmk {
 		switch(pos){
 			//Retry
 			case 0: 
-			global.GameStarted = false
+			global.GameStarted = false;
+			global.PlayersDown = 0;
 			var target = rm_TitleScreen
 			TransitionStart(target,seq_fadeout, seq_fadein);
 			global.FullPlayer = false;

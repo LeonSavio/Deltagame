@@ -48,15 +48,13 @@ global.MusicVolume += 0.1
 }
 
 if (keyboard_check_pressed(vk_f4)){
-	if window_get_fullscreen() == true{
-		window_set_fullscreen(false)
-	} else {
-		window_set_fullscreen(true)
-	}
+ global.fullscreen = !global.fullscreen;
+ window_set_fullscreen(global.fullscreen);
 }
 
 if (keyboard_check_pressed(vk_f5)){
 	global.GameStarted = false;
+	global.PlayersDown = 0;
 	game_restart()
 }
 
