@@ -1,4 +1,4 @@
-
+global.TextSpeed = .75
 
 //Colisão
 global.tilemap_collision = layer_tilemap_get_id("Collisions");

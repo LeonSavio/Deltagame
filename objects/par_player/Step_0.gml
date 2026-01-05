@@ -1,4 +1,4 @@
-//Knockback
+#region Knockback
 if (KBTimer > 0){
 sprite_index = spr_hurt
 
@@ -30,6 +30,7 @@ KBTimer -= 1;
 KBSpeed *= 0.85;
 
 }
+#endregion
 
 if TP > 39{
 	TP = 39
@@ -39,7 +40,7 @@ if HP > HPMax{
 	HP = HPMax
 }
 
-//IFrames
+#region IFrames
 if (IFrames) {
     IFramesTimer -= 1;
     FlashTimer += 1;
@@ -55,6 +56,7 @@ if (IFrames) {
         visible = true;  
     }
 }
+#endregion
 
 script_execute(State)
 
@@ -70,4 +72,10 @@ if instance_exists(obj_hud){
 	obj_hud.LV[Player-1] = LV;
 	obj_hud.TP[Player-1] = TP;
 	obj_hud.TPVisible[Player-1] = false
+}
+
+if HP <= 0 && State != PlayerStateDown{
+	instance_destroy(collider)
+	State = PlayerStateDown
+	global.PlayersDown += 1;
 }

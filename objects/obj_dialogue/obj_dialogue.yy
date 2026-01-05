@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ice",
+  "%Name":"obj_dialogue",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ice",
+  "name":"obj_dialogue",
   "overriddenProperties":[],
   "parent":{
-    "name":"ActualObjects",
-    "path":"folders/Objects/ActualObjects.yy",
+    "name":"GlobalStuff",
+    "path":"folders/Objects/GlobalStuff.yy",
   },
-  "parentObjectId":{
-    "name":"par_entity",
-    "path":"objects/par_entity/par_entity.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_iceshoked",
-    "path":"sprites/spr_iceshoked/spr_iceshoked.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

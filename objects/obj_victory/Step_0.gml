@@ -1,6 +1,7 @@
 var confirmk = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter);
 
 if confirmk && clicked == false{
+	global.GameStarted = false
 	audio_play_sound(snd_select,0,false);
 	var target = rm_TitleScreen
 	TransitionStart(target,seq_fadeout, seq_fadein);

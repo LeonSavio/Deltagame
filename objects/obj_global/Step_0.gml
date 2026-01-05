@@ -22,7 +22,6 @@ if room == rm_Beach && instance_exists(par_player){
 global.time += 1/FRAME_RATE
 }
 
-
 if room == rm_Beach && instance_number(par_enemy) <= 10{
 	SetMusic(mus_NORTHERNLIGHT_Alt, 120, 240)
 	layer_set_visible(layer_get_id("Calor"), false)
@@ -57,6 +56,7 @@ if (keyboard_check_pressed(vk_f4)){
 }
 
 if (keyboard_check_pressed(vk_f5)){
+	global.GameStarted = false;
 	game_restart()
 }
 
@@ -81,3 +81,9 @@ if keyboard_check_pressed(vk_pageup){
 }
 
 #endregion
+
+if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
+		instance_destroy(par_player)
+		var target = (rm_Gameover)
+		TransitionStart(target, seq_fadeout, seq_fadein)
+}

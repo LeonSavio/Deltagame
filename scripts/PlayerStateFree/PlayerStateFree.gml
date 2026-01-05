@@ -6,7 +6,7 @@ var leftk = keyboard_check(Left)
 var upk = keyboard_check(Up)
 var downk = keyboard_check(Down)
 var stayidleplease = keyboard_check_released(Down)
-var attackk = keyboard_check_pressed(Confirm)
+var confirmk = keyboard_check_pressed(Confirm)
 var taughtk = keyboard_check_pressed(Taught)
 
 //Define velocidades
@@ -57,9 +57,20 @@ if (inputMagnitude != 0){
 	direction = inputDirection 
 }
 
-if (attackk && AttackCd == 0) {
-	State = PlayerStateAttack
-	AttackCd = AttackCdMax
+if (confirmk) {
+	var _xlooking = lengthdir_x(10,direction)
+	var _ylooking = lengthdir_y(10,direction)
+	
+	Active = instance_position(x+_xlooking,y+_ylooking,par_entity)
+	
+	if Active == noone or Active.entityActivateScript == -1{
+		if AttackCd <= 0{
+			State = PlayerStateAttack
+			AttackCd = AttackCdMax
+		}
+	} else {
+		script_execute_ext(Active.entityActivateScript,Active.entityActivateArgs)
+	}
 }
 
 if AttackCd > 0{

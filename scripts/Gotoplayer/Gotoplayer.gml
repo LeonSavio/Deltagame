@@ -1,5 +1,6 @@
 function Gotoplayer(){
 if instance_exists(par_player){
+
 var xp = instance_nearest(x,y,par_player).x
 var yp = instance_nearest(x,y,par_player).y
 
@@ -21,7 +22,6 @@ switch(dir){
 	break;
 }
 }
-
 
 if (point_distance(x,y,xp,yp) <= 175) || Hitted = true{
 	mp_potential_step(xp,yp,spd,false)

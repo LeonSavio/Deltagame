@@ -1,1 +1,4 @@
 #macro FRAME_RATE 60
+
+#macro RESOLUTION_W 960
+#macro RESOLUTION_H 720
