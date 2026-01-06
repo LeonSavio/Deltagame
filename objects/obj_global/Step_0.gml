@@ -89,6 +89,7 @@ if keyboard_check_pressed(vk_pageup){
 #endregion
 
 if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
+		par_enemy.AIBehavior = PlayerStateAiming
 		instance_destroy(par_player)
 		var target = (rm_Gameover)
 		TransitionStart(target, seq_fadeout, seq_fadein)
