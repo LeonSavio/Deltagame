@@ -1,10 +1,10 @@
 //Ataque começa
 function GoldenStrike(){
 
-if (sprite_index != spr_herostrike){ 
+if (sprite_index != spr_herostrikegolden){ 
 	
 	//faz a animação
-	sprite_index = spr_herostrike; 
+	sprite_index = spr_herostrikegolden; 
 	localFrame = 0; 
 	image_index = 0; 
 	audio_play_sound(snd_strike,0,0)
@@ -17,7 +17,7 @@ if (sprite_index != spr_herostrike){
 
 var _crit = random_range(1,20)
 if _crit == 20 {
-	ATK = ATK*2
+	ATK = ATK*4
 }
 
 AttackHit(spr_herostrikehb)
@@ -28,7 +28,7 @@ if (animationEnd) {
 	 State = PlayerStateFree; 
 	 animationEnd = false; 
 	 if _crit == 20 {
-		ATK = ATK/2
+		ATK = ATK/4
 	}
      switch (round(direction / 90)) {
 		case 0: sprite_index = spr_heroright; break;

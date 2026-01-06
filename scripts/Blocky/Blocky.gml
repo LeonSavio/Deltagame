@@ -1,5 +1,6 @@
 function Blocky(){
-	if keyboard_check(Confirm){
+	if keyboard_check(Confirm) && TP > 0{
+		TP -= 0.5
 		sprite_index = spr_block
 		instance_destroy(collider)
 		if Wall == -1 {Wall = instance_create_depth(x,y,depth,obj_wall)}
@@ -13,5 +14,6 @@ function Blocky(){
 		Wall = -1
 		sprite_index = spr_idle
 		State = PlayerStateFree
+		AttackCd += 25
 	}
 }
