@@ -6,7 +6,7 @@
   "name":"Gotoplayer",
   "parent":{
     "name":"AIBehaviours",
-    "path":"folders/Scripts/AIBehaviours.yy",
+    "path":"folders/Scripts/Combat/AIBehaviours.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

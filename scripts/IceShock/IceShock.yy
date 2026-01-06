@@ -6,7 +6,7 @@
   "name":"IceShock",
   "parent":{
     "name":"Attacks",
-    "path":"folders/Scripts/Attacks.yy",
+    "path":"folders/Scripts/Combat/Attacks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

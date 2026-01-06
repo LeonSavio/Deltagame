@@ -91,6 +91,7 @@ if keyboard_check_pressed(vk_pageup){
 
 if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
 		par_enemy.AIBehavior = PlayerStateAiming
+		SetMusic(mus_Darkness_Falls,60,60)
 		instance_destroy(par_player)
 		var target = (rm_Gameover)
 		TransitionStart(target, seq_fadeout, seq_fadein)

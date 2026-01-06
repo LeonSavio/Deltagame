@@ -91,12 +91,12 @@ spd = spdbase/1.8
 }
 
 if Burning > 0{
-Burning -= 1/(250-(Burning*35))
+Burning -= 1/(225-(Burning*20))
 HP -= (0.15/30)*Burning;
 
 if HP <= 0 {
 	Erradicate(par_player, self)
-	audio_play_sound(snd_badexplosion,0,false)
+	audio_play_sound(snd_badexplosion,0,false,global.SEVolume)
 } 
 
 image_blend = c_orange

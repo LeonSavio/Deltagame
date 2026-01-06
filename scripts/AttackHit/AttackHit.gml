@@ -15,7 +15,7 @@ if (Hits > 0){
 					Erradicate(other,self);
 				} else if (entityHitScript == Hurt){
 					if (_mask_index == atk_rudebuster && self.IFrames = false){
-						audio_play_sound(snd_rudebuster_hit,0,false)
+						audio_play_sound(snd_rudebuster_hit,0,false,global.SEVolume)
 					}
 					Hurt(other,self,other.KBForce);
 					}

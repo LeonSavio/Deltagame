@@ -7,7 +7,7 @@ var cancelk = keyboard_check_pressed(ord("X"))  || keyboard_check_pressed(vk_shi
 
 pos += downk - upk
 if upk || downk {
-	audio_play_sound(snd_menumove,0,false);
+	audio_play_sound(snd_menumove,0,false,global.SEVolume);
 }
 if downk - upk != 0{
 obj_soul.canmove = true
@@ -22,7 +22,8 @@ if confirmk {
 
 		switch(pos){
 			//Retry
-			case 0: 
+			case 0:
+			audio_play_sound(snd_select,0,false,global.SEVolume);
 			global.GameStarted = false;
 			global.PlayersDown = 0;
 			var target = rm_TitleScreen

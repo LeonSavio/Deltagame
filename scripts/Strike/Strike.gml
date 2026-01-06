@@ -7,7 +7,7 @@ if (sprite_index != spr_herostrike){
 	sprite_index = spr_herostrike; 
 	localFrame = 0; 
 	image_index = 0; 
-	audio_play_sound(snd_strike,0,0)
+	audio_play_sound(snd_strike,0,0,global.SEVolume)
 	
 	//Limpa a hit list
 	

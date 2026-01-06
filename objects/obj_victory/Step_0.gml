@@ -3,7 +3,7 @@ var confirmk = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_ent
 if confirmk && clicked == false{	
 	global.GameStarted = false;
 	global.PlayersDown = 0;
-	audio_play_sound(snd_select,0,false);
+	audio_play_sound(snd_select,0,false,global.SEVolume);
 	var target = rm_TitleScreen
 	TransitionStart(target,seq_fadeout, seq_fadein);
 	global.FullPlayer = false;	

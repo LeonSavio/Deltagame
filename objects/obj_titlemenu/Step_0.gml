@@ -7,7 +7,7 @@ var cancelk = keyboard_check_pressed(ord("X"))  || keyboard_check_pressed(vk_shi
 
 pos += downk - upk
 if upk || downk {
-	audio_play_sound(snd_menumove,0,false);
+	audio_play_sound(snd_menumove,0,false,global.SEVolume);
 }
 
 op_length = array_length(options[menu_level]);
@@ -35,10 +35,10 @@ switch(menu_level){
 			break;
 			//Settings
 			case 1: menu_level = 1; 
-			audio_play_sound(snd_select,0,false); break;
+			audio_play_sound(snd_select,0,false,global.SEVolume); break;
 			//Credits
 			case 2: 
-			audio_play_sound(snd_error,0,false); break;
+			audio_play_sound(snd_error,0,false,global.SEVolume); break;
 			//Exit
 			case long[0]: game_end() break;
 		}
@@ -48,16 +48,16 @@ switch(menu_level){
 	case 1:
 		switch(pos){
 			//Controls
-			case 0: menu_level = 2; audio_play_sound(snd_select,0,false); break;
+			case 0: menu_level = 2; audio_play_sound(snd_select,0,false,global.SEVolume); break;
 			//Back
-			case long[1]: menu_level = 0; audio_play_sound(snd_select,0,false); break;
+			case long[1]: menu_level = 0; audio_play_sound(snd_select,0,false,global.SEVolume); break;
 		}
 		break;
 		
 	case 2:
 		switch(pos){
 			//Back
-			case long[2]: menu_level = 1; audio_play_sound(snd_select,0,false); break;
+			case long[2]: menu_level = 1; audio_play_sound(snd_select,0,false,global.SEVolume); break;
 		}
 		break;
 }

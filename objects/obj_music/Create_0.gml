@@ -1,4 +1,5 @@
 global.MusicVolume = 0.4;
+global.SEVolume = 0.6;
 
 musPlaying = noone;
 musAsset = noone;
