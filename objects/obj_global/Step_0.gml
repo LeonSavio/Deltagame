@@ -74,6 +74,7 @@ with (obj_wall) {
     visible = global.show_walls;
 }
 
+
 if keyboard_check_pressed(vk_f3){
 global.show_hp = !global.show_hp
 }
