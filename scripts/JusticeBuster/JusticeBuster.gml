@@ -30,7 +30,7 @@ function JusticeBuster(){
 	
 	//avisa
 	if (RudePower >= 46 && played == false || TP >= 39  && played == false) {
-		audio_play_sound(snd_rudebuster_prepared,0,false,global.SEVolume,0,random_range(0.65,0.8))
+		audio_play_sound(snd_suslaugh,0,false,global.SEVolume,0)
 		played = true
 	}
 	
@@ -48,7 +48,7 @@ function JusticeBuster(){
 			
 			if self.TP >= 39{
 				self.TP -= 39
-				rudebuster.sprite_index = atk_redbuster;
+				rudebuster.sprite_index = atk_greenbuster;
 				rudebuster.image_yscale = 1.5;
 				rudebuster.spd = 12;
 				rudebuster.ATK = (self.ATK + self.Magic)*3.5
@@ -56,10 +56,10 @@ function JusticeBuster(){
 				rudebuster.KBForce = 16;
 			} else {
 			
-				if RudePower < 20{
+				if RudePower < 63{
 					rudebuster.sprite_index = atk_greenbuster;
 					rudebuster.image_yscale = 0.70;
-					rudebuster.image_alpha = 0.6
+					rudebuster.image_alpha = 0.4
 					rudebuster.spd = 7;
 					rudebuster.ATK = (self.ATK + (self.Magic/2))*0.4
 					rudebuster.KBForce = 3;

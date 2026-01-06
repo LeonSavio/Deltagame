@@ -36,5 +36,5 @@
     "path":"sprites/spr_generic/spr_generic.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

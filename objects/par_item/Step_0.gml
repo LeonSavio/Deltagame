@@ -17,5 +17,6 @@ if y != GoTargety{
 if !instance_exists(obj_dialogue) && GotIt == true{
 	spriteowner.sprite_index = spriteowner.spr_idle
 	spriteowner.State = PlayerStateFree
+	instance_destroy(coll)
 	instance_destroy()
 }
