@@ -1,7 +1,7 @@
-var _width = width;
-
-
-
+_players = instance_number(par_player)
+if _players != instance_number(par_player){
+	resized = false
+}
 
 for(var i = 0; i < array_length(playerList); ++i) {
 	view_visible[0] = true;
@@ -11,8 +11,11 @@ for(var i = 0; i < array_length(playerList); ++i) {
 	camera_set_view_target(global.cameras[i], playerList[i]);
 	view_xport[i] = cameraW * i;
 	view_wport[i] = cameraW;
-	
-	window_set_size(960 + 320 * clamp((instance_number(par_player)-1),0,2) , 720);
-    surface_resize(application_surface, 960 + 320 * clamp((instance_number(par_player)-1),0,2), 720);
-	
 }
+
+if instance_number(par_player) >= 2 && resized == false{
+window_set_size(960 + 320, 720);
+surface_resize(application_surface, 960 + 320, 720);
+resized = true
+}
+	

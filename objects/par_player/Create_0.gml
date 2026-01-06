@@ -1,4 +1,3 @@
-
 if (!instance_exists(obj_camera)) {
 instance_create_depth(x,y,depth,obj_camera);
 }
@@ -91,5 +90,5 @@ if Player == 3{
 
 NextLevelEXP = 3;
 
-division = 0;
-
+_xlooking = -1; 
+_ylooking = -1;

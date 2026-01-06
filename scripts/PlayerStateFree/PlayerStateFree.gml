@@ -58,10 +58,10 @@ if (inputMagnitude != 0){
 }
 
 if (confirmk) {
-	var _xlooking = lengthdir_x(10,direction)
-	var _ylooking = lengthdir_y(10,direction)
-	
-	Active = instance_position(x+_xlooking,y+_ylooking,par_entity)
+	_xlooking = lengthdir_x(16,direction)
+	_ylooking = lengthdir_y(16,direction)
+
+	Active = instance_position(x+_xlooking,y+_ylooking,[par_entity, par_item])
 	
 	if Active == noone or Active.entityActivateScript == -1{
 		if AttackCd <= 0{

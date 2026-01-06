@@ -3,7 +3,7 @@ function AttackHit(_mask_index){
 var _old_mask = mask_index
 mask_index = _mask_index;
 var HitByAttackNow = ds_list_create();
-var Hits = instance_place_list(x,y,[par_enemy, par_plant],HitByAttackNow,false);
+var Hits = instance_place_list(x,y,[par_enemy, par_plant, obj_ice],HitByAttackNow,false);
 if (Hits > 0){
 	for (var i = 0; i < Hits; i++){
 		var HitID = HitByAttackNow[| i];

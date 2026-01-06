@@ -30,7 +30,7 @@ function RudeBuster(){
 	
 	//avisa
 	if (RudePower >= 46 && played == false || TP >= 22  && played == false) {
-		audio_play_sound(snd_rudebuster_prepared,0,false)
+		audio_play_sound(snd_rudebuster_prepared,0,false,0,0,random_range(0.85,1.1))
 		played = true
 	}
 	

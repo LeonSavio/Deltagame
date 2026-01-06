@@ -1,6 +1,5 @@
 display_set_gui_size(RESOLUTION_W,RESOLUTION_H)
 draw_set_colour(c_black)
-draw_set_alpha(1);
 draw_rectangle(x1,y1,x2,y2,false)
 draw_set_colour(c_white)
 draw_set_font(fnt_board)

@@ -8,7 +8,7 @@
   "name":"obj_cactus2",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_plant","path":"objects/par_plant/par_plant.yy",},"propertyId":{"name":"ItHurts","path":"objects/par_plant/par_plant.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_plant","path":"objects/par_plant/par_plant.yy",},"propertyId":{"name":"ATK","path":"objects/par_plant/par_plant.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_plant","path":"objects/par_plant/par_plant.yy",},"propertyId":{"name":"ATK","path":"objects/par_plant/par_plant.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
   ],
   "parent":{
     "name":"ActualObjects",

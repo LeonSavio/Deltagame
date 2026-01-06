@@ -7,7 +7,8 @@ spr_down = spr_axedown;
 spr_right = spr_axeright;
 spr_left = spr_axeleft;
 spr_idle = spr_axeidle;
-spr_hurt = spr_axedown_1;
+spr_hurt = spr_axehurt;
+spr_item = spr_axeitem;
 
 State = PlayerStateFree
 StateAttack = [RudeBuster]

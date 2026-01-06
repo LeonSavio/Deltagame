@@ -5,7 +5,7 @@ instance_destroy(collider)
 if (!ds_exists(EnemyHitByAttack, ds_type_list)) EnemyHitByAttack = ds_list_create();
 ds_list_clear(EnemyHitByAttack)
 
-if place_meeting(x,y,par_player){
+if place_meeting(x,y,obj_PlayerColl){
 	EnemyAttackHit()
 }
 

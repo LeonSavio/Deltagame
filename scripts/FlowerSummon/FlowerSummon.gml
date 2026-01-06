@@ -1,13 +1,13 @@
 function FlowerSummon0(){
 
 if instance_exists(par_player){
-if cooldown <= 0{
+if Cd <= 0 || Hitted = true  && Cd <= 0{
 	var fire = array_create(2)
 	
 	var targetx = instance_nearest(x,y,par_player).x
 	var targety = instance_nearest(x,y,par_player).y
 	if point_distance(x,y,targetx,targety) < 32*Range{
-	cooldown = CdMax
+	Cd = CdMax
 	fire[0] = instance_create_layer(x,y,layer,obj_fireballalt)
 	fire[1] = instance_create_layer(x,y,layer,obj_fireballalt)
 	fire[0].x = targetx-96
@@ -18,7 +18,7 @@ if cooldown <= 0{
 	fire[1].targety = targety;	fire[0].targety = targety;
 	fire[1].spd = 6;	fire[0].spd = 6;
 }}
-cooldown -= 1
+Cd -= 1
 }
 
 if IFramesTimer >= 0 {
@@ -29,13 +29,13 @@ if IFramesTimer >= 0 {
 function FlowerSummon1(){
 
 if instance_exists(par_player){
-if cooldown <= 0{
+if Cd <= 0{
 	var fire = array_create(8)
 	
 	var targetx = instance_nearest(x,y,par_player).x
 	var targety = instance_nearest(x,y,par_player).y
 	if point_distance(x,y,targetx,targety) < 32*Range{
-	cooldown = CdMax
+	Cd = CdMax
 		for (var i = 0; i < 8; i++){
 		var radius = 96
 		fire[i] = instance_create_layer(targetx+lengthdir_x(radius,45*i),targety+lengthdir_y(radius,45*i),layer,obj_fireballalt)
@@ -46,7 +46,7 @@ if cooldown <= 0{
 		fire[i].targety = targety+lengthdir_y(0,45*i)	
 		}
 }}
-cooldown -= 1
+Cd -= 1
 }
 
 if IFramesTimer >= 0 {
@@ -57,13 +57,13 @@ if IFramesTimer >= 0 {
 function FlowerSummon2(){
 
 if instance_exists(par_player){
-if cooldown <= 0{
+if Cd<= 0{
 	var fire = array_create(8)
 	
 	var targetx = instance_nearest(x,y,par_player).x
 	var targety = instance_nearest(x,y,par_player).y
 	if point_distance(x,y,targetx,targety) < 32*Range{
-	cooldown = CdMax
+	Cd = CdMax
 		for (var i = 0; i < 8; i++){
 		var radius = 112
 		fire[i] = instance_create_layer(targetx+lengthdir_x(radius,45*i),targety+lengthdir_y(radius,45*i),layer,obj_fireballalt)
@@ -73,7 +73,7 @@ if cooldown <= 0{
 		fire[i].targety = targety+lengthdir_y(0,45*i)	
 		}
 }}
-cooldown -= 1
+Cd -= 1
 }
 
 if IFramesTimer >= 0 {

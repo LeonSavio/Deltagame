@@ -18,3 +18,5 @@ global.cameras[i] = camera_create_view(0, 0, cameraW, height, 0, playerList[i], 
 
 window_set_size(960, 720);
 surface_resize(application_surface, 960, 720);
+
+resized = false;

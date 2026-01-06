@@ -30,9 +30,14 @@ if room == rm_Beach && instance_number(par_enemy) <= 10{
 }
 if room == rm_Beach && instance_number(par_enemy) <= 0{
 	room_goto(rm_Victory)
+	window_set_size(960, 720);
+	surface_resize(application_surface, 960, 720);
 }
 if room == rm_Victory{
-instance_create_layer(472, 252,"Instances", obj_victory)}
+if !instance_exists(obj_victory){
+instance_create_layer(472, 252,"Instances", obj_victory)
+}
+}
 
 
 #region Debug Keys
@@ -48,8 +53,11 @@ global.MusicVolume += 0.1
 }
 
 if (keyboard_check_pressed(vk_f4)){
- global.fullscreen = !global.fullscreen;
- window_set_fullscreen(global.fullscreen);
+	if window_get_fullscreen() == true{
+		window_set_fullscreen(false)
+	} else {
+		window_set_fullscreen(true)
+	}
 }
 
 if (keyboard_check_pressed(vk_f5)){
@@ -84,4 +92,6 @@ if global.PlayersDown == instance_number(par_player) && global.GameStarted == tr
 		instance_destroy(par_player)
 		var target = (rm_Gameover)
 		TransitionStart(target, seq_fadeout, seq_fadein)
+		window_set_size(960, 720);
+		surface_resize(application_surface, 960, 720);
 }

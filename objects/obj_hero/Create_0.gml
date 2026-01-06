@@ -8,5 +8,7 @@ spr_right = spr_heroright;
 spr_left = spr_heroleft;
 spr_idle = spr_heroidle;
 spr_hurt = spr_herohurt;
+spr_item = spr_heroitem;
 
+State = PlayerStateFree
 StateAttack = [Strike]
