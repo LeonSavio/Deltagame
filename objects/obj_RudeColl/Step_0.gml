@@ -14,3 +14,4 @@ if  place_meeting(x,y,obj_wall){
 }
 
 LifeTime += 1
+visible = global.show_walls;

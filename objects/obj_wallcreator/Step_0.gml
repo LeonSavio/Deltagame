@@ -13,10 +13,11 @@ for (var xx = 0; xx <= room_width; xx += grid_unit)
         {
             instance_create_depth(xx+16, yy+16, 10, obj_wall);
         }
+		if layer_exists("Projectiles"){
         if (tilemap_get_at_pixel(map2_id, xx, yy) != 0)
         {
             instance_create_depth(xx+16, yy+16, 10, obj_projectfriendly);
-        }
+        }}
 	if xx=room_width or yy=room_height{ loop = false
 		}
     }

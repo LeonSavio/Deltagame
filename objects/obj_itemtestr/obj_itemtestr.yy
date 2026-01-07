@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_item","path":"objects/par_item/par_item.yy",},"propertyId":{"name":"itemName","path":"objects/par_item/par_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Cactus",},
   ],
   "parent":{
-    "name":"ActualObjects",
-    "path":"folders/Objects/ActualObjects.yy",
+    "name":"Itens",
+    "path":"folders/Objects/ActualObjects/Itens.yy",
   },
   "parentObjectId":{
     "name":"par_item",

@@ -57,6 +57,11 @@ global.MusicVolume += 0.1
 global.SEVolume += 0.1
 }
 
+
+if keyboard_check_pressed(vk_numpad2){
+global.Gold += 1
+}
+
 if (keyboard_check_pressed(vk_f4)){
 	if window_get_fullscreen() == true{
 		window_set_fullscreen(false)

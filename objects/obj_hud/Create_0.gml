@@ -23,7 +23,8 @@ for (var i = 0; i < PlayerMax; i++){
 	//HP
 	var HpPanel = flexpanel_node_get_child(Hud[i].Panel, "HPBar")
 	var HpStruct = flexpanel_node_get_struct(HpPanel);
-	Hud[i].HP = HpStruct.layerElements[0].elementId;
+	Hud[i].HPText = HpStruct.layerElements[0].elementId;
+	Hud[i].HP = HpStruct.layerElements[1].elementId;
 	
 	//Exp & LV
 	var ExpPanel = flexpanel_node_get_child(Hud[i].Panel, "EXPBar");
@@ -39,6 +40,11 @@ for (var i = 0; i < PlayerMax; i++){
 	var Barra = flexpanel_node_get_struct(Bar);
 	Hud[i].TP = Barra.layerElements[1].elementId;
 	Hud[i].Skill = Skill.layerElements[0].elementId;
+	
+	//GOLD
+	var ItensPanel = flexpanel_node_get_child(Hud[0].Panel, "Itens")
+	var ItensStruct = flexpanel_node_get_struct(ItensPanel);
+	Hud[i].Gold = ItensStruct.layerElements[0].elementId;
 	
 }
 

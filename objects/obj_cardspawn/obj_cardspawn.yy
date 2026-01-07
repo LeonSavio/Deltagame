@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_projectfriendly",
+  "%Name":"obj_cardspawn",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_projectfriendly",
+  "name":"obj_cardspawn",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collisions",
-    "path":"folders/Objects/Collisions.yy",
+    "name":"ActualObjects",
+    "path":"folders/Objects/ActualObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,11 +28,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_generic3",
-    "path":"sprites/spr_generic3/spr_generic3.yy",
+    "name":"spr_I_TheMagician",
+    "path":"sprites/spr_I_TheMagician/spr_I_TheMagician.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

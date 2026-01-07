@@ -1,0 +1,1 @@
+visible = global.show_walls;

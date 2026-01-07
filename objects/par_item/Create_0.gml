@@ -5,5 +5,5 @@ coll.image_yscale = .65
 }
 GoTargety = y;
 owner = noone
-spriteowner = noone
 GotIt = false
+buffed = true;

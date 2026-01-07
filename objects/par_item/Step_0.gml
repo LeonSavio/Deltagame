@@ -1,3 +1,4 @@
+
 if coll != noone{
 coll.x = x
 coll.y = y
@@ -6,17 +7,18 @@ coll.y = y
 if y != GoTargety{
 	y -= 1
 } else {
-	if owner != noone {
+	if GotIt != true && owner != noone{
 	NewText("You got " + string(itemName))
-	spriteowner = owner
 	GotIt = true
-	owner = noone
 	}
 }
 
 if !instance_exists(obj_dialogue) && GotIt == true{
-	spriteowner.sprite_index = spriteowner.spr_idle
-	spriteowner.State = PlayerStateFree
+	owner.sprite_index = owner.spr_idle
+	owner.State = PlayerStateFree
+	if buffed = false{
+	global.Gold -= itemPrice
 	instance_destroy(coll)
 	instance_destroy()
+	}
 }

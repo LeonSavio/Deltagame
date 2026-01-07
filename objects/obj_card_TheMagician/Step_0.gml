@@ -1,9 +1,8 @@
 event_inherited();
 
-var buffed = true
-
 if GotIt == true && buffed == true{
-	owner.HP = 1
-	owner.ATK += 0.5
+	NewText(" +Full TP!")
+	owner.TP = 39
+	owner.Magic += 0.5
 	buffed = false
 }

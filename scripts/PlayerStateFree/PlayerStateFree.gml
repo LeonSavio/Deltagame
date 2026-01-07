@@ -61,15 +61,21 @@ if (confirmk) {
 	var _xlooking = lengthdir_x(16,direction)
 	var _ylooking = lengthdir_y(16,direction)
 
+
 	Active = instance_position(x+_xlooking,y+_ylooking,[par_entity, par_item])
-	
 	if Active == noone or Active.entityActivateScript == -1{
 		if AttackCd <= 0{
 			State = PlayerStateAttack
 			AttackCd = AttackCdMax
 		}
 	} else {
-		script_execute_ext(Active.entityActivateScript,Active.entityActivateArgs)
+		if object_get_parent(Active.object_index) == par_item {
+			if global.Gold >= Active.itemPrice{
+		script_execute_ext(Active.entityActivateScript,Active.entityActivateArgs)}
+		} 
+		 else {
+			script_execute_ext(Active.entityActivateScript,Active.entityActivateArgs)
+		}
 	}
 }
 

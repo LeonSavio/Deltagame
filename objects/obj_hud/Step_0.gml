@@ -13,6 +13,9 @@ for (var i = 0; i < PlayerMax; i++){
 	layer_set_visible("TpBar"+idx,TPVisible[i])
 	
 	//HP
+	if global.show_hp == true{	layer_text_text(Hud[i].HPText,HP[i])} else {
+	layer_text_text(Hud[i].HPText,"")
+	}
 	layer_sprite_blend(Hud[i].HP,Color[i])
 	layer_sprite_xscale(Hud[i].HP,(HP[i]/MaxHP[i])*100)
 	
@@ -30,6 +33,9 @@ for (var i = 0; i < PlayerMax; i++){
 	//skill
 	layer_text_blend(Hud[i].Skill,Color[i]);
 	layer_text_text(Hud[i].Skill,SkillShow[i])
+	
+	//Gold
+	layer_text_text(Hud[i].Gold ,string(global.Gold) + " G")
 }
 
 

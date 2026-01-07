@@ -11,8 +11,9 @@ function Erradicate(Attacker,Taker) {
 	Taker.State = "dying";
 	if (Attacker.LV < 4){
 	par_player.EXP += Taker.EXPDrop
-	par_player.TP += 2
 	}
+	par_player.TP += 2
+	global.Gold += 1
 	} else {
 		if Taker.sprite_index != spr_iceshoked{
 		audio_play_sound(snd_icespell,1,false,global.SEVolume)

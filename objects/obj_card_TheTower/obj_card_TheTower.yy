@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_justiceaxe",
+  "%Name":"obj_card_TheTower",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_justiceaxe",
+  "name":"obj_card_TheTower",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_item","path":"objects/par_item/par_item.yy",},"propertyId":{"name":"itemName","path":"objects/par_item/par_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Justice Axe",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_item","path":"objects/par_item/par_item.yy",},"propertyId":{"name":"itemName","path":"objects/par_item/par_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"The Tower",},
   ],
   "parent":{
     "name":"Itens",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_axejustice",
-    "path":"sprites/spr_axejustice/spr_axejustice.yy",
+    "name":"spr_XVI_TheTower",
+    "path":"sprites/spr_XVI_TheTower/spr_XVI_TheTower.yy",
   },
   "spriteMaskId":null,
   "visible":true,
