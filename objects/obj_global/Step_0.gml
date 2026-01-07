@@ -2,17 +2,17 @@ if instance_number(par_player) = 1{
 if (keyboard_check_pressed(vk_enter) && 
 !instance_exists(obj_herochoose) &&
 !instance_exists(obj_player2summon) &&
-global.FullPlayer == false){
+global.FullPlayer == false) && room != rm_Shop {
 	instance_create_layer(x,y, layer, obj_player2summon);
 }}
 if instance_number(par_player) = 2{
 if (keyboard_check_pressed(ord("E")) && 
 !instance_exists(obj_herochoose) &&
 !instance_exists(obj_player2summon) &&
-global.FullPlayer == false){
+global.FullPlayer == false) && room != rm_Shop {
 	instance_create_layer(x,y, layer, obj_player2summon);
 }}
-//Isso tem mais condições do que eu me orgulho
+//Isso tem mais condições do que eu me orgulho^2
 
 if !instance_exists(obj_music){
 instance_create_layer(x,y,layer,obj_music)

@@ -7,7 +7,7 @@ if GotIt == true && buffed == true{
 	owner.ATK += 0.5
 	owner.Magic += 0.5
 	owner.spd += 0.1
-	owner.AttackCdMax -= AttackCdMax/10
+	owner.AttackCdMax -= owner.AttackCdMax/10
 	owner.DEF -= 3
 	buffed = false
 }
