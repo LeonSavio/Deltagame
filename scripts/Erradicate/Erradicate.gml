@@ -12,7 +12,9 @@ function Erradicate(Attacker,Taker) {
 	if (Attacker.LV < 4){
 	par_player.EXP += Taker.EXPDrop
 	}
-	par_player.TP += 2
+	for (var i = 0; i < instance_number(par_player); i++){
+	global.Player[i].TP += 2
+	}
 	global.Gold += Taker.GoldDrop
 	} else {
 		if Taker.sprite_index != spr_iceshoked{
@@ -21,7 +23,9 @@ function Erradicate(Attacker,Taker) {
 		instance_destroy(Taker)
 		if (Attacker.LV < 4){
 		par_player.EXP += Taker.EXPDrop
-		Attacker.TP += 1.5
+			for (var i = 0; i < instance_number(par_player); i++){
+			global.Player[i].TP += 1.5
+			}
 	}
 		}
 		if Taker.sprite_index == spr_iceshoked{
