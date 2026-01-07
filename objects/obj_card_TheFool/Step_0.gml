@@ -1,6 +1,7 @@
 event_inherited();
 
 if GotIt == true && buffed == true{
+	array_push(owner.Cards, self)
 	NewText(" Fragile but an easy restart")
 	owner.HPMax += 1
 	owner.HP += 1

@@ -1,6 +1,7 @@
 event_inherited();
 
 if GotIt == true && buffed == true{
+	array_push(owner.Cards, self)
 	NewText(" HP in excharge for DMG")
 	owner.ATK = owner.ATK/4
 	owner.HPMax = owner.HPMax*2.5

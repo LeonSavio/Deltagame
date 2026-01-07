@@ -22,7 +22,7 @@ if num == 20{
 	_card = obj_card_TheHighPriestess; extracost = 0;
 }
 
-_card = instance_create_layer(x,y,layer,_card)
-_card.itemPrice = irandom_range(8,12)+extracost
+card = instance_create_layer(x,y,layer,_card)
+card.itemPrice = irandom_range(8,12)+extracost
 
 instance_destroy()

@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v2","%Name":"ItHurts","filters":[],"listItems":[],"multiselect":false,"name":"ItHurts","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"ATK","filters":[],"listItems":[],"multiselect":false,"name":"ATK","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"EXPDrop","filters":[],"listItems":[],"multiselect":false,"name":"EXPDrop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"GoldDrop","filters":[],"listItems":[],"multiselect":false,"name":"GoldDrop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

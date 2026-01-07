@@ -1,6 +1,7 @@
 event_inherited();
 
 if GotIt == true && buffed == true{
+	array_push(owner.Cards, self)
 	var die = irandom_range(1,7)
 	if die > 5{
 	NewText(" +Creation")

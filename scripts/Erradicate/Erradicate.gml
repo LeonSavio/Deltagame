@@ -13,7 +13,7 @@ function Erradicate(Attacker,Taker) {
 	par_player.EXP += Taker.EXPDrop
 	}
 	par_player.TP += 2
-	global.Gold += 1
+	global.Gold += Taker.GoldDrop
 	} else {
 		if Taker.sprite_index != spr_iceshoked{
 		audio_play_sound(snd_icespell,1,false,global.SEVolume)

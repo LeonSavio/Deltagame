@@ -11,6 +11,8 @@ State = PlayerStateFree;
 pos = 0;
 HitByAttack = -1;
 
+Cards = []
+
 //Cooldown atual do ataque
 AttackCd = 0;
 

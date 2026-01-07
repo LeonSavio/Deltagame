@@ -15,7 +15,7 @@ global.FullPlayer == false) && room != rm_Shop {
 //Isso tem mais condições do que eu me orgulho^2
 
 if !instance_exists(obj_music){
-instance_create_layer(x,y,layer,obj_music)
+	instance_create_layer(x,y,layer,obj_music)
 }
 
 if room == rm_Beach && instance_exists(par_player){
@@ -29,19 +29,12 @@ if room == rm_Beach && instance_number(par_enemy) <= 10{
 	layer_set_visible(layer_get_id("Night2"), true)
 }
 if room == rm_Beach && instance_number(par_enemy) <= 0{
-	global.restartShop = true
-	room_persistent = false;
-	instance_destroy(par_player)
+	TrueReset()
 	room_goto(rm_Victory)
 	SetResolution()
 }
-if room == rm_Victory{
-if !instance_exists(obj_victory){
-instance_create_layer(472, 252,"Instances", obj_victory)
-}
-}
 if room == rm_Shop{
-	if global.restartShop == true {room_restart(); 	global.restartShop = false;}
+	if global.restartShop == true {room_persistent = false; room_restart();	global.restartShop = false;}
 }
 
 
@@ -59,7 +52,6 @@ if keyboard_check_pressed(vk_add){
 global.MusicVolume += 0.1
 global.SEVolume += 0.1
 }
-
 
 if keyboard_check_pressed(vk_numpad2){
 global.Gold += 1
@@ -103,13 +95,8 @@ if keyboard_check_pressed(vk_pageup){
 #endregion
 
 if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
-		global.restartShop = true
-		room_persistent = false;
-		global.Gold = 0;
-		par_enemy.AIBehavior = PlayerStateAiming
-		SetMusic(mus_Darkness_Falls,60,60)
-		instance_destroy(par_player)
-		var target = (rm_Gameover)
-		TransitionStart(target, seq_fadeout, seq_fadein)
-		SetResolution()
+	TrueReset()
+	var target = (rm_Gameover)
+	SetMusic(mus_Darkness_Falls,60,60)
+	TransitionStart(target, seq_fadeout, seq_fadein)
 }

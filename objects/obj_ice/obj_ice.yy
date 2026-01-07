@@ -36,6 +36,7 @@
     {"$GMObjectProperty":"v2","%Name":"entityHitScript","filters":[],"listItems":[],"multiselect":false,"name":"entityHitScript","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Erradicate","path":"scripts/Erradicate/Erradicate.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Erradicate","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"LVNeeded","filters":[],"listItems":[],"multiselect":false,"name":"LVNeeded","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"EXPDrop","filters":[],"listItems":[],"multiselect":false,"name":"EXPDrop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.75","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"GoldDrop","filters":[],"listItems":[],"multiselect":false,"name":"GoldDrop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -8,7 +8,11 @@ for(var i = 0; i < array_length(playerList); ++i) {
 	
 	cameraW	= (width / clamp(instance_number(par_player),1,2)) + 128 * instance_number(par_player) ;
 	view_set_camera(i, global.cameras[i]);
-	camera_set_view_target(global.cameras[i], playerList[i]);
+	if playerList[i] != noone{
+	camera_set_view_pos(global.cameras[i],
+	floor(playerList[i].x-(camera_get_view_width(view_camera[i])*0.5)),
+	floor(playerList[i].y-(camera_get_view_height(view_camera[i])*0.5)))
+	}
 	view_xport[i] = cameraW * i;
 	view_wport[i] = cameraW;
 }
