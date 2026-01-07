@@ -1,6 +1,7 @@
 var confirmk = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter);
 
-if confirmk && clicked == false{	
+if confirmk && clicked == false{
+	global.Gold = 0;
 	global.GameStarted = false;
 	global.PlayersDown = 0;
 	audio_play_sound(snd_select,0,false,global.SEVolume);

@@ -24,6 +24,7 @@ if confirmk {
 			//Retry
 			case 0:
 			audio_play_sound(snd_select,0,false,global.SEVolume);
+			global.Gold = 0;
 			global.GameStarted = false;
 			global.PlayersDown = 0;
 			var target = rm_TitleScreen

@@ -29,7 +29,7 @@ function RudeBuster(){
 	}
 	
 	//avisa
-	if (RudePower >= 46 && played == false || TP >= 22  && played == false) {
+	if (RudePower >= 46 && played == false || TP >= 22*TPCostMultiplier  && played == false) {
 		audio_play_sound(snd_rudebuster_prepared,0,false,global.SEVolume,0)
 		played = true
 	}
@@ -46,8 +46,8 @@ function RudeBuster(){
 		rudebuster.Dir = round(self.direction/90); 
 		
 			
-			if self.TP >= 22{
-				self.TP -= 22
+			if self.TP >= 22*TPCostMultiplier{
+				self.TP -= 22*TPCostMultiplier
 				rudebuster.sprite_index = atk_redbuster;
 				rudebuster.image_yscale = 1.5;
 				rudebuster.spd = 12;

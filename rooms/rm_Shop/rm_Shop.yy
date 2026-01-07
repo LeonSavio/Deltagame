@@ -11,10 +11,13 @@
     {"name":"inst_756DF58B","path":"rooms/rm_Shop/rm_Shop.yy",},
     {"name":"inst_4526A9AE","path":"rooms/rm_Shop/rm_Shop.yy",},
     {"name":"inst_7E9C03ED","path":"rooms/rm_Shop/rm_Shop.yy",},
+    {"name":"inst_28628B0C","path":"rooms/rm_Shop/rm_Shop.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"CollisionPlayer","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"CollisionPlayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"CollisionPlayer","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_28628B0C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28628B0C","objectId":{"name":"obj_itemspawn","path":"objects/obj_itemspawn/obj_itemspawn.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":96.0,},
+      ],"layers":[],"name":"CollisionPlayer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Collisions","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collisions","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":8,"SerialiseWidth":12,"TileCompressedData":[
           -13,562,-10,-2147483648,-2,562,-10,-2147483648,-2,562,-10,-2147483648,-2,562,-10,-2147483648,-2,562,
           -10,-2147483648,-2,562,-10,-2147483648,-6,562,-2,-2147483648,-5,562,

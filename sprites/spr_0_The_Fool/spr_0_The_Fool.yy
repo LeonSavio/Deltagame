@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_I_TheMagician",
+  "%Name":"spr_0_The_Fool",
   "bboxMode":0,
   "bbox_bottom":17,
   "bbox_left":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"e1e0f9ec-d197-4a3a-9448-eaf79b0103a3","name":"e1e0f9ec-d197-4a3a-9448-eaf79b0103a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b2dccf64-d415-4b5b-92a8-38c1bacb6a49","name":"b2dccf64-d415-4b5b-92a8-38c1bacb6a49","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":18,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3d525e2d-d1ba-47de-b911-512f912a560f","blendMode":0,"displayName":"default","isLocked":false,"name":"3d525e2d-d1ba-47de-b911-512f912a560f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"441fc0ee-28b7-410f-ba22-f2f2f5dadaca","blendMode":0,"displayName":"default","isLocked":false,"name":"441fc0ee-28b7-410f-ba22-f2f2f5dadaca","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_I_TheMagician",
+  "name":"spr_0_The_Fool",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_I_TheMagician",
+    "%Name":"spr_0_The_Fool",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_I_TheMagician",
+    "name":"spr_0_The_Fool",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1e0f9ec-d197-4a3a-9448-eaf79b0103a3","path":"sprites/spr_I_TheMagician/spr_I_TheMagician.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"23183aa9-d2d2-4b6c-949b-8d5c30f851a3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b2dccf64-d415-4b5b-92a8-38c1bacb6a49","path":"sprites/spr_0_The_Fool/spr_0_The_Fool.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"715b5fc3-bf51-47df-b501-dd43c973eeea","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

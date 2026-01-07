@@ -29,6 +29,7 @@ if room == rm_Beach && instance_number(par_enemy) <= 10{
 	layer_set_visible(layer_get_id("Night2"), true)
 }
 if room == rm_Beach && instance_number(par_enemy) <= 0{
+	global.restartShop = true
 	room_persistent = false;
 	instance_destroy(par_player)
 	room_goto(rm_Victory)
@@ -39,6 +40,9 @@ if room == rm_Victory{
 if !instance_exists(obj_victory){
 instance_create_layer(472, 252,"Instances", obj_victory)
 }
+}
+if room == rm_Shop{
+	if global.restartShop == true {room_restart(); 	global.restartShop = false;}
 }
 
 
@@ -100,7 +104,9 @@ if keyboard_check_pressed(vk_pageup){
 #endregion
 
 if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
+		global.restartShop = true
 		room_persistent = false;
+		global.Gold = 0;
 		par_enemy.AIBehavior = PlayerStateAiming
 		SetMusic(mus_Darkness_Falls,60,60)
 		instance_destroy(par_player)

@@ -12,6 +12,7 @@ if GotIt == true && buffed == true{
 	NewText(" +Destruction")
 	owner.HPMax -= 2
 	owner.ATK -= 1
+	owner.TP -= owner.TP/2
 	}
 	buffed = false
 }

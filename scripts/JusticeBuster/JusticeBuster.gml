@@ -29,7 +29,7 @@ function JusticeBuster(){
 	}
 	
 	//avisa
-	if (RudePower >= 46 && played == false || TP >= 39  && played == false) {
+	if (RudePower >= 46 && played == false || TP >= 39*TPCostMultiplier  && played == false) {
 		audio_play_sound(snd_suslaugh,0,false,global.SEVolume,0)
 		played = true
 	}
@@ -46,8 +46,8 @@ function JusticeBuster(){
 		rudebuster.Dir = round(self.direction/90); 
 		
 			
-			if self.TP >= 39{
-				self.TP -= 39
+			if self.TP*TPCostMultiplier >= 39*TPCostMultiplier{
+				self.TPTPCostMultiplier -= 39*TPCostMultiplier
 				rudebuster.sprite_index = atk_greenbuster;
 				rudebuster.image_yscale = 1.5;
 				rudebuster.spd = 12;

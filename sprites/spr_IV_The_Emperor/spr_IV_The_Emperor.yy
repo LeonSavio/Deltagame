@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_I_TheMagician",
+  "%Name":"spr_IV_The_Emperor",
   "bboxMode":0,
   "bbox_bottom":17,
   "bbox_left":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"e1e0f9ec-d197-4a3a-9448-eaf79b0103a3","name":"e1e0f9ec-d197-4a3a-9448-eaf79b0103a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"39d4ebed-500c-47f7-8722-2ef79e0fe482","name":"39d4ebed-500c-47f7-8722-2ef79e0fe482","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":18,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3d525e2d-d1ba-47de-b911-512f912a560f","blendMode":0,"displayName":"default","isLocked":false,"name":"3d525e2d-d1ba-47de-b911-512f912a560f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4977213b-7f26-4866-b180-aa5c398557b1","blendMode":0,"displayName":"default","isLocked":false,"name":"4977213b-7f26-4866-b180-aa5c398557b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_I_TheMagician",
+  "name":"spr_IV_The_Emperor",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_I_TheMagician",
+    "%Name":"spr_IV_The_Emperor",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_I_TheMagician",
+    "name":"spr_IV_The_Emperor",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1e0f9ec-d197-4a3a-9448-eaf79b0103a3","path":"sprites/spr_I_TheMagician/spr_I_TheMagician.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"23183aa9-d2d2-4b6c-949b-8d5c30f851a3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"39d4ebed-500c-47f7-8722-2ef79e0fe482","path":"sprites/spr_IV_The_Emperor/spr_IV_The_Emperor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9aa595f9-8aa6-4c07-9e0b-a072ec931471","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -5,5 +5,6 @@ global.PlayersDown = 0;
 global.GameStarted = false;
 global.time = 0
 global.Gold = 0;
+global.restartShop = false
 
 global.Player = array_create(MAX_PLAYERS,noone)

@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wallcreator",
+  "%Name":"obj_itemspawn",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wallcreator",
+  "name":"obj_itemspawn",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collisions",
-    "path":"folders/Objects/Collisions.yy",
+    "name":"ActualObjects",
+    "path":"folders/Objects/ActualObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_axejusticealt",
+    "path":"sprites/spr_axejusticealt/spr_axejusticealt.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

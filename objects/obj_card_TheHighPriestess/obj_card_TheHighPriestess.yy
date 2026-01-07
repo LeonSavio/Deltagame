@@ -1,18 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wallcreator",
+  "%Name":"obj_card_TheHighPriestess",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wallcreator",
-  "overriddenProperties":[],
+  "name":"obj_card_TheHighPriestess",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_item","path":"objects/par_item/par_item.yy",},"propertyId":{"name":"itemName","path":"objects/par_item/par_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"The High Priestess",},
+  ],
   "parent":{
-    "name":"Collisions",
-    "path":"folders/Objects/Collisions.yy",
+    "name":"Itens",
+    "path":"folders/Objects/ActualObjects/Itens.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_item",
+    "path":"objects/par_item/par_item.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_II_The_High_Priestess",
+    "path":"sprites/spr_II_The_High_Priestess/spr_II_The_High_Priestess.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

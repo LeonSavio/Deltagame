@@ -10,8 +10,8 @@
   "name":"par_item",
   "overriddenProperties":[],
   "parent":{
-    "name":"GlobalStuff",
-    "path":"folders/Objects/GlobalStuff.yy",
+    "name":"Parents",
+    "path":"folders/Objects/GlobalStuff/Parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,
