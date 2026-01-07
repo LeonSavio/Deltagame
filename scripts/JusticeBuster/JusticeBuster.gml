@@ -46,8 +46,8 @@ function JusticeBuster(){
 		rudebuster.Dir = round(self.direction/90); 
 		
 			
-			if self.TP*TPCostMultiplier >= 39*TPCostMultiplier{
-				self.TPTPCostMultiplier -= 39*TPCostMultiplier
+			if self.TP >= 39*TPCostMultiplier{
+				self.TP -= 39*TPCostMultiplier
 				rudebuster.sprite_index = atk_greenbuster;
 				rudebuster.image_yscale = 1.5;
 				rudebuster.spd = 12;

@@ -1,6 +1,5 @@
 event_inherited();
 
-var buffed = true
 
 if GotIt == true && buffed == true{
 	owner.HP = 1

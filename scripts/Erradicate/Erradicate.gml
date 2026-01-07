@@ -21,7 +21,7 @@ function Erradicate(Attacker,Taker) {
 		instance_destroy(Taker)
 		if (Attacker.LV < 4){
 		par_player.EXP += Taker.EXPDrop
-		par_player.TP += 1.5
+		Attacker.TP += 1.5
 	}
 		}
 		if Taker.sprite_index == spr_iceshoked{

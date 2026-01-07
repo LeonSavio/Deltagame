@@ -1,6 +1,5 @@
 event_inherited();
 
-var buffed = true
 
 if GotIt == true && buffed == true{
 	if owner.sprite_index == spr_axeitem{

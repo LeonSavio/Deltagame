@@ -4,4 +4,5 @@ function TrueReset(){
 		global.Gold = 0;
 		instance_destroy(par_player)
 		SetResolution()
+		global.FullPlayer = false;
 }
