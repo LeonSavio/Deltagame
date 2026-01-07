@@ -13,9 +13,7 @@ for(var i = 0; i < array_length(playerList); ++i) {
 	view_wport[i] = cameraW;
 }
 
-if instance_number(par_player) >= 2 && resized == false{
-window_set_size(960 + 320, 720);
-surface_resize(application_surface, 960 + 320, 720);
-resized = true
+if resized == false{
+SetResolution(960,720,true,instance_number(par_player))
 }
 	

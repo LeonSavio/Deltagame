@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SetResolution",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SetResolution",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
