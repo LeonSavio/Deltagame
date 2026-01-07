@@ -58,8 +58,8 @@ if (inputMagnitude != 0){
 }
 
 if (confirmk) {
-	_xlooking = lengthdir_x(16,direction)
-	_ylooking = lengthdir_y(16,direction)
+	var _xlooking = lengthdir_x(16,direction)
+	var _ylooking = lengthdir_y(16,direction)
 
 	Active = instance_position(x+_xlooking,y+_ylooking,[par_entity, par_item])
 	
@@ -81,9 +81,6 @@ if taughtk && !audio_is_playing(taughtaudio) && taughtaudio != 0{
 	audio_play_sound(taughtaudio,0,false)
 }
 
-if (keyboard_check_pressed(Camera)){
-	obj_camera.target = self
-}
 
 if(keyboard_check_pressed(Change)){
 	pos += 1

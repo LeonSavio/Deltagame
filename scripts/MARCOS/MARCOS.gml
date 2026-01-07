@@ -2,3 +2,4 @@
 
 #macro RESOLUTION_W 960
 #macro RESOLUTION_H 720
+#macro MAX_PLAYERS 3

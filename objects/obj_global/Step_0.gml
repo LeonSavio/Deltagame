@@ -29,6 +29,8 @@ if room == rm_Beach && instance_number(par_enemy) <= 10{
 	layer_set_visible(layer_get_id("Night2"), true)
 }
 if room == rm_Beach && instance_number(par_enemy) <= 0{
+	room_persistent = false;
+	instance_destroy(par_player)
 	room_goto(rm_Victory)
 	window_set_size(960, 720);
 	surface_resize(application_surface, 960, 720);
@@ -44,12 +46,15 @@ instance_create_layer(472, 252,"Instances", obj_victory)
 
 if keyboard_check_pressed(vk_f6){
 global.MusicVolume = 0
+global.SEVolume = 0
 }
 if keyboard_check_pressed(vk_subtract){
 global.MusicVolume -= 0.1
+global.SEVolume -= 0.1
 }
-if keyboard_check_pressed(vk_multiply){
+if keyboard_check_pressed(vk_add){
 global.MusicVolume += 0.1
+global.SEVolume += 0.1
 }
 
 if (keyboard_check_pressed(vk_f4)){
@@ -90,6 +95,7 @@ if keyboard_check_pressed(vk_pageup){
 #endregion
 
 if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
+		room_persistent = false;
 		par_enemy.AIBehavior = PlayerStateAiming
 		SetMusic(mus_Darkness_Falls,60,60)
 		instance_destroy(par_player)

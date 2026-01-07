@@ -1,7 +1,3 @@
-if (!instance_exists(obj_camera)) {
-instance_create_depth(x,y,depth,obj_camera);
-}
-
 //Cria obj_PlayerColl e vincula ao Player que ela pertence
 collider = instance_create_layer(x, y, "CollisionPlayer", obj_PlayerColl);
 collider.owner = self;
@@ -38,17 +34,9 @@ image_yscale = 2;
 //Define o numero de player
 Player = instance_number(par_player)
 
-//Controles
-Left = 1
-Right = 1
-Up = 1
-Down = 1
-Confirm = 1
-Cancel = 1
-Camera = 1
-Change = 1
+switch (Player){
 
-if Player == 1{
+	case 1:
 	Left = vk_left
 	Right = vk_right
 	Up = vk_up
@@ -56,13 +44,14 @@ if Player == 1{
 	Confirm = ord("Z")
 	Cancel = ord("X")
 	Taught = ord("V")
-	Camera = ord("N")
-	Change= ord("C")
+	Change = ord("C")
+	global.Player[Player-1] = self
 	obj_camera.playerList[Player-1] = self
 	global.time = 0
-}
+	break;
 
-if Player == 2{
+
+	case 2:
 	Left = ord("A")
 	Right = ord("D")
 	Up = ord("W")
@@ -70,13 +59,14 @@ if Player == 2{
 	Confirm = vk_enter
 	Cancel = vk_shift
 	Taught = ord("T")
-	Camera = ord("M")
+	Change = vk_control
+	global.Player[Player-1] = self
 	obj_camera.playerList[Player-1] = self
-	Change= vk_control
 	view_visible[1] = true;
-}
+	break;
 
-if Player == 3{
+
+	case 3:
 	Left = ord("J")
 	Right = ord("L")
 	Up = ord("I")
@@ -84,11 +74,9 @@ if Player == 3{
 	Confirm = ord("E")
 	Cancel = ord("R")
 	Taught = ord("Y")
-	Camera = ord("Q")
-	Change= vk_alt
+	Change = vk_alt
+	global.Player[Player-1] = self
+	break;
 }
 
 NextLevelEXP = 3;
-
-_xlooking = -1; 
-_ylooking = -1;
