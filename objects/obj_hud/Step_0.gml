@@ -34,8 +34,18 @@ for (var i = 0; i < PlayerMax; i++){
 	layer_text_blend(Hud[i].Skill,Color[i]);
 	layer_text_text(Hud[i].Skill,SkillShow[i])
 	
+	
 	//Gold
 	layer_text_text(Hud[i].Gold ,string(global.Gold) + " G")
+	
+	//Icon
+	if global.Player[i] != noone{
+	if array_contains(global.Player[i].StateAttack, HealPrayer) && global.Player[i].TP >= 20{
+	layer_sprite_change(Hud[i].Icon,spr_healprayericon)
+	} else {
+	layer_sprite_alpha(Hud[i].Icon,0)
+	}
+	}
 }
 
 

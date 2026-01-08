@@ -29,7 +29,7 @@ function JusticeBuster(){
 	}
 	
 	//avisa
-	if (RudePower >= 46 && played == false || TP >= 39*TPCostMultiplier  && played == false) {
+	if (RudePower >= 46 && played == false) {
 		audio_play_sound(snd_suslaugh,0,false,global.SEVolume,0)
 		played = true
 	}
@@ -44,19 +44,7 @@ function JusticeBuster(){
 		rudebuster.KBForce = self.KBForce
 		rudebuster.image_angle = (round(self.direction/90)*90);
 		rudebuster.Dir = round(self.direction/90); 
-		
-			
-			if self.TP >= 39*TPCostMultiplier{
-				self.TP -= 39*TPCostMultiplier
-				rudebuster.sprite_index = atk_greenbuster;
-				rudebuster.image_yscale = 1.5;
-				rudebuster.spd = 12;
-				rudebuster.ATK = (self.ATK + self.Magic)*3.5
-				audio_play_sound(snd_redbuster_swing,0,false,global.SEVolume,0,-3)
-				rudebuster.KBForce = 16;
-			} else {
-			
-				if RudePower < 63{
+				if RudePower < 73{
 					rudebuster.sprite_index = atk_greenbuster;
 					rudebuster.image_yscale = 0.70;
 					rudebuster.image_alpha = 0.4
@@ -64,7 +52,7 @@ function JusticeBuster(){
 					rudebuster.ATK = (self.ATK + (self.Magic/2))*0.4
 					rudebuster.KBForce = 3;
 				}
-				if RudePower >= 63{
+				if RudePower >= 73{
 					rudebuster.sprite_index = atk_greenbuster;
 					rudebuster.image_yscale = 1.25;
 					rudebuster.spd = 8;
@@ -72,8 +60,6 @@ function JusticeBuster(){
 					audio_play_sound(snd_rudebuster_swing,0,false,global.SEVolume,0,.65)
 					rudebuster.KBForce = 9;
 				}
-			
-			}
 		rudebuster.RudePower = self.RudePower
 		self.RudePower = 0;
 		self.State = PlayerStateFree

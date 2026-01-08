@@ -11,5 +11,7 @@ spr_hurt = spr_axehurt;
 spr_item = spr_axeitem;
 
 State = PlayerStateFree
-StateAttack = [RudeBuster]
+StateAttack = [RudeBuster, ImminentDeath]
 played = false;
+beserked = false;
+drainer =  -1;

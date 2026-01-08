@@ -1,0 +1,21 @@
+{
+  "$GMPath":"",
+  "%Name":"BirdPath",
+  "closed":false,
+  "kind":0,
+  "name":"BirdPath",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":4.0,"x":0.0,"y":0.0,},
+    {"speed":100.0,"x":31.5,"y":0.5,},
+    {"speed":100.0,"x":44.978027,"y":10.30233,},
+    {"speed":100.0,"x":31.140823,"y":18.441864,},
+    {"speed":100.0,"x":1.2570953,"y":2.441864,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

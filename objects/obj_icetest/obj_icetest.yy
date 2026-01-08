@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_iceshoked",
-    "path":"sprites/spr_iceshoked/spr_iceshoked.yy",
+    "name":"spr_ice",
+    "path":"sprites/spr_ice/spr_ice.yy",
   },
   "spriteMaskId":null,
   "visible":true,

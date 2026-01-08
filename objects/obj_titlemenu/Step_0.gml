@@ -31,7 +31,7 @@ switch(menu_level){
 			obj_soul.targety = room_height/2
 			audio_play_sound(snd_select,0,false);
 			var target = (rm_Beach)
-			TransitionStart(target,seq_fadeout, seq_fadein)
+			SetTransition(seq_fadeout,seq_fadein, target)
 			break;
 			//Settings
 			case 1: menu_level = 1; 

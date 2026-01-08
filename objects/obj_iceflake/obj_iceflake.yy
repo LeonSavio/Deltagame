@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_iceblock",
-    "path":"sprites/spr_iceblock/spr_iceblock.yy",
+    "name":"spr_iceshockpart",
+    "path":"sprites/spr_iceshockpart/spr_iceshockpart.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -13,11 +13,17 @@ function Erradicate(Attacker,Taker) {
 	par_player.EXP += Taker.EXPDrop
 	}
 	for (var i = 0; i < instance_number(par_player); i++){
+		if audio_is_playing(mus_Vs_Susie){
+				global.Player[i].TP += 7
+		}else if audio_is_playing(mus_Need_a_hand){
+			global.Player[i].TP += 4.5
+		}else{
 	global.Player[i].TP += 2
+		}
 	}
 	global.Gold += Taker.GoldDrop
 	} else {
-		if Taker.sprite_index != spr_iceshoked{
+		if Taker.sprite_index != spr_ice{
 		audio_play_sound(snd_icespell,1,false,global.SEVolume)
 		instance_create_layer(Taker.x,Taker.y,Taker.layer,obj_iceflake)
 		instance_destroy(Taker)
@@ -28,7 +34,7 @@ function Erradicate(Attacker,Taker) {
 			}
 	}
 		}
-		if Taker.sprite_index == spr_iceshoked{
+		if Taker.sprite_index == spr_ice{
 		instance_destroy(Attacker.collider)
 		instance_destroy(Attacker)
 		if !audio_is_playing(snd_strikemetal){

@@ -1,7 +1,5 @@
 
-TransitionStart(index, seq_fadeout, seq_fadein)
-par_player.x = targetx
-par_player.y = targety
+	SetTransition(seq_fadeout,seq_fadein,index, targetx, targety)
 
 if (index == rm_Shop) {
 	SetResolution()

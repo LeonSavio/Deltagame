@@ -25,11 +25,11 @@ function RudeBuster(){
 	
 	//segurando
 	if keyboard_check(Confirm){
-		self.RudePower += 1+(self.TP/20);
+		self.RudePower += 1
 	}
 	
 	//avisa
-	if (RudePower >= 46 && played == false || TP >= 22*TPCostMultiplier  && played == false) {
+	if (RudePower >= 46 && played == false) {
 		audio_play_sound(snd_rudebuster_prepared,0,false,global.SEVolume,0)
 		played = true
 	}
@@ -44,17 +44,6 @@ function RudeBuster(){
 		rudebuster.KBForce = self.KBForce
 		rudebuster.image_angle = (round(self.direction/90)*90);
 		rudebuster.Dir = round(self.direction/90); 
-		
-			
-			if self.TP >= 22*TPCostMultiplier{
-				self.TP -= 22*TPCostMultiplier
-				rudebuster.sprite_index = atk_redbuster;
-				rudebuster.image_yscale = 1.5;
-				rudebuster.spd = 12;
-				rudebuster.ATK = (self.ATK + self.Magic)*3
-				audio_play_sound(snd_redbuster_swing,0,false,global.SEVolume,0,-3)
-				rudebuster.KBForce = 12;
-			} else {
 			
 				if RudePower < 20{
 					rudebuster.sprite_index = atk_greenbuster;
@@ -78,8 +67,6 @@ function RudeBuster(){
 					audio_play_sound(snd_redbuster_swing,0,false,global.SEVolume,0,random_range(0.7,0.9))
 					rudebuster.KBForce = 8;
 				}
-			
-			}
 		rudebuster.RudePower = self.RudePower
 		self.RudePower = 0;
 		self.State = PlayerStateFree

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"TransitionRoom",
+  "%Name":"SetTransition",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"TransitionRoom",
+  "name":"SetTransition",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

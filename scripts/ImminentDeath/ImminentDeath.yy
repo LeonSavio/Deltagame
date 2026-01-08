@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ImminentDeath",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ImminentDeath",
+  "parent":{
+    "name":"Attacks",
+    "path":"folders/Scripts/Combat/Attacks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

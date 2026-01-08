@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"HeroDeer",
-    "path":"folders/Sprites/Heroes/HeroDeer.yy",
+    "name":"AttacksorEffects",
+    "path":"folders/Sprites/AttacksorEffects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

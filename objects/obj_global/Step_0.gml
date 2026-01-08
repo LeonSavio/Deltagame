@@ -56,6 +56,9 @@ global.SEVolume += 0.1
 if keyboard_check_pressed(vk_numpad2){
 global.Gold += 1
 }
+if keyboard_check_pressed(vk_numpad1){
+par_player.TP += 1
+}
 
 if (keyboard_check_pressed(vk_f4)){
 	if window_get_fullscreen() == true{
@@ -66,8 +69,7 @@ if (keyboard_check_pressed(vk_f4)){
 }
 
 if (keyboard_check_pressed(vk_f5)){
-	global.GameStarted = false;
-	global.PlayersDown = 0;
+	TrueReset()
 	game_restart()
 }
 
@@ -95,8 +97,7 @@ if keyboard_check_pressed(vk_pageup){
 #endregion
 
 if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
-	TrueReset()
-	var target = (rm_Gameover)
+	SetTransition(seq_fadeout,seq_fadein,rm_Gameover)
 	SetMusic(mus_Darkness_Falls,60,60)
-	TransitionStart(target, seq_fadeout, seq_fadein)
+	TrueReset()
 }

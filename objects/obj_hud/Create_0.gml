@@ -36,10 +36,13 @@ for (var i = 0; i < PlayerMax; i++){
 	Hud[i].PanelTP = layer_get_flexpanel_node("TpBar"+idx);
 	var Bar = flexpanel_node_get_child(Hud[i].PanelTP, "Bar");
 	var SkillName = flexpanel_node_get_child(Hud[i].PanelTP, "SkillName");
+	var IconPanel = flexpanel_node_get_child(Hud[i].PanelTP, "Icon");
 	var Skill = flexpanel_node_get_struct(SkillName)
 	var Barra = flexpanel_node_get_struct(Bar);
+	var Icon = flexpanel_node_get_struct(IconPanel);
 	Hud[i].TP = Barra.layerElements[1].elementId;
 	Hud[i].Skill = Skill.layerElements[0].elementId;
+	Hud[i].Icon = Icon.layerElements[0].elementId;
 	
 	//GOLD
 	var ItensPanel = flexpanel_node_get_child(Hud[0].Panel, "Itens")
