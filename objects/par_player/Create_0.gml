@@ -82,4 +82,4 @@ switch (Player){
 	break;
 }
 
-NextLevelEXP = 3;
+NextLevelEXP = 12;
