@@ -18,25 +18,12 @@ function StartTransition(_type){
 	var lay = layer_create(-9999, "Transitions")
 	
 	//Cria transição pra dois players
-	if window_get_width() == 1280{
-		for (var i = 0; i < 2; i++){
-		global.SequencePlaying = layer_sequence_create(lay,global.Player[i].x,global.Player[i].y,_type)
-		}
-	} else {
-	if instance_number(par_player) == 0{
-	//Transição pra zero players/menus
-		global.SequencePlaying = layer_sequence_create(lay,
-		(camera_get_view_width(view_camera[0])*0.5),
-		(camera_get_view_height(view_camera[0])*0.5),
-		_type)
-	} else {
-		global.SequencePlaying = layer_sequence_create(lay,
-		global.Player[0].x,
-		global.Player[0].y,
-		_type)
-	}
-	
-	}
+
+if (instance_number(par_player) < 10) {	
+	global.SequencePlaying = layer_sequence_create(lay,window_get_width()/2,window_get_height()/2,_type)
+} /*else {
+	global.SequencePlaying = layer_sequence_create(lay,window_get_width()/4,window_get_height()/2,_type)
+	}*/
 }
 
 function MiddleTransition(){

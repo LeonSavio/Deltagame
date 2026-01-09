@@ -7,4 +7,5 @@ function TrueReset(){
 		instance_destroy(par_player)
 		SetResolution()
 		global.FullPlayer = false;
+		//par_enemy.AIBehavior = None;
 }
