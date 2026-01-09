@@ -1,5 +1,7 @@
 var upk = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 var downk = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
+var rightk = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"));
+var leftk = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"));
 var confirmk = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter);
 var cancelk = keyboard_check_pressed(ord("X"))  || keyboard_check_pressed(vk_shift);
 
@@ -48,12 +50,13 @@ switch(menu_level){
 	case 1:
 		switch(pos){
 			//Controls
-			case 0: menu_level = 2; audio_play_sound(snd_select,0,false,global.SEVolume); break;
+			case 2: menu_level = 2; audio_play_sound(snd_select,0,false,global.SEVolume); break;
 			//Back
 			case long[1]: menu_level = 0; audio_play_sound(snd_select,0,false,global.SEVolume); break;
 		}
 		break;
 		
+	//Controls
 	case 2:
 		switch(pos){
 			//Back
@@ -62,6 +65,7 @@ switch(menu_level){
 		break;
 }
 	
+	
 //Bota na primeira opção quando você vai e volta de um menu
 if _menulevel != menu_level {pos = 0}
 
@@ -69,3 +73,26 @@ if _menulevel != menu_level {pos = 0}
 
 obj_soul.targetx = x+borderspace-(12*(string_length(options[menu_level][pos]))+1)
 obj_soul.targety = y + (textspace * pos)
+
+//Volume change
+
+options[1][0] = "Volume: " + string(global.MusicVolume*100) + "%"
+options[1][1] = "Sound Effects: " + string(global.SEVolume*100) + "%"
+if menu_level == 1 && pos == 0{
+if rightk{
+global.MusicVolume += .01
+}
+if leftk{
+global.MusicVolume -= .01
+
+}
+}
+if menu_level == 1 && pos == 1{
+if rightk{
+global.SEVolume += .01
+}
+if leftk{
+global.SEVolume -= .01
+
+}
+}

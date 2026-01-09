@@ -1,4 +1,4 @@
-var Tiles = layer_get_id("Tiles")
+
 
 if instance_number(par_player) = 2 {
 leftk = keyboard_check_pressed(ord("J"))

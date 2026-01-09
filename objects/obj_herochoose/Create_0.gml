@@ -6,7 +6,7 @@ leftk = 1
 rightk = 1
 confirmk = 1
 
-Tiles= layer_get_id("Tiles")
+Tiles = layer_get_id("Tiles")
 if !instance_exists(par_player){
 	layer_set_visible(Tiles, false)
 }

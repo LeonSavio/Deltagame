@@ -14,7 +14,7 @@ options[0] = ["Play", "Settings", "Credits", "Exit"]
 long[0] = array_length(options[0])-1
 
 //Settings
-options[1] = ["Controls", "Back"]
+options[1] = ["Sound Effects: " + string(global.MusicVolume*100) + "%", "Sound Effects: " + string(global.SEVolume*100) + "%", "Controls", "Back"]
 long[1] = array_length(options[1])-1
 
 //Controls

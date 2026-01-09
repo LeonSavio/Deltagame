@@ -1,15 +1,16 @@
 global.roomTarget = -1
 global.TransitionEnd = -1
 
-function SetTransition(_typeOut, _typeIn, _roomTarget, targetx = 0, targety = 0){
+function SetTransition(_typeOut, _typeIn, _roomTarget, targetx = 0, targety = 0, soundeffect = false){
 	if instance_exists(par_player){
 	par_player.State = PlayerStateAiming
 	}
-	StartTransition(_typeOut)
 	global.roomTarget = _roomTarget
 	global.Spawnx = targetx
 	global.Spawny = targety
 	global.TransitionEnd = _typeIn
+	StartTransition(_typeOut)
+	if soundeffect == true{audio_play_sound(snd_escaped,6,false,global.SEVolume,0,0.9)}
 }
 
 function StartTransition(_type){
@@ -39,25 +40,22 @@ function StartTransition(_type){
 }
 
 function MiddleTransition(){
-	layer_sequence_pause(self.elementID)
+	layer_set_target_room(global.roomTarget)
+	layer_sequence_destroy(self.elementID);
 	if instance_exists(par_player){
 	par_player.x = global.Spawnx
 	par_player.y = global.Spawny
 	}
 	room_goto(global.roomTarget)
-	layer_sequence_play(self.elementID)
+	StartTransition(global.TransitionEnd)
+	layer_reset_target_room()
+}
+
+
+
+function FinishTransition(){
 	if instance_exists(par_player){
 	par_player.State = PlayerStateFree
 	}
-	EndTransition()
-}
-
-function EndTransition(){
-	StartTransition(global.TransitionEnd)
-	layer_sequence_destroy(self.elementID)
-}
-
-function FinishTransition(){
-	global.TransitionEnd = -1
-	layer_sequence_destroy(self.elementID)
+	layer_sequence_destroy(self.elementID);
 }

@@ -1,5 +1,5 @@
 
-	SetTransition(seq_fadeout,seq_fadein,index, targetx, targety)
+	SetTransition(seq_fadeout,seq_fadein,index, targetx, targety, true)
 
 if (index == rm_Shop) {
 	SetResolution()

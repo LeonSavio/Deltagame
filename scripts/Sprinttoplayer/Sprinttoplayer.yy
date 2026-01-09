@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Sprinttoplayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sprinttoplayer",
+  "parent":{
+    "name":"AIBehaviours",
+    "path":"folders/Scripts/Combat/AIBehaviours.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
