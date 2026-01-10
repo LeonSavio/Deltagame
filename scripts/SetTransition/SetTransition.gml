@@ -16,8 +16,14 @@ function SetTransition(_typeOut, _typeIn, _roomTarget, targetx = 0, targety = 0,
 function StartTransition(_type){
 	if (layer_exists("Transitions")) {layer_destroy("Transitions")};
 	var lay = layer_create(-9999, "Transitions")
-	global.SequencePlaying = layer_sequence_create(lay,window_get_width()/2,window_get_height()/2,_type)
+	
+	//Cria transição pra dois players
 
+if (instance_number(par_player) < 10) {	
+	global.SequencePlaying = layer_sequence_create(lay,window_get_width()/2,window_get_height()/2,_type)
+} /*else {
+	global.SequencePlaying = layer_sequence_create(lay,window_get_width()/4,window_get_height()/2,_type)
+	}*/
 }
 
 function MiddleTransition(){
@@ -30,8 +36,6 @@ function MiddleTransition(){
 	room_goto(global.roomTarget)
 	StartTransition(global.TransitionEnd)
 	layer_reset_target_room()
-	if (layer_exists("Transitions")) {layer_destroy("Transitions")};
-	global.roomTarget = -1;
 }
 
 
@@ -40,6 +44,5 @@ function FinishTransition(){
 	if instance_exists(par_player){
 	par_player.State = PlayerStateFree
 	}
-	if (layer_exists("Transitions")) {layer_destroy("Transitions")};
-	global.roomTarget = -1;
+	layer_sequence_destroy(self.elementID);
 }

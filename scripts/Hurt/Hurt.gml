@@ -9,17 +9,17 @@ function Hurt(Attacker, Enemy, KBForce){
 	Attacker.TP += 0.1225
 	Enemy.Cd += 25
 	
-	
+	/*
 	var part = instance_create_depth(Enemy.x,Enemy.y,depth-1,obj_particle);
 	part.owner = self
 	
 	part.sprite_index = spr_icehit
-	part.image_xscale = clamp(.50*Attacker.Magic,0,1.5)
-	part.image_yscale = clamp(.50*Attacker.Magic,0,1.5)
+	part.image_xscale = .75
+	part.image_yscale = .75
 
-	/*if variable_instance_exists(Enemy,Stamina){
+	if variable_instance_exists(Enemy,Stamina){
 	Stamina -= 30
-	}*/
+	}**/
 	
 	//Ataque de fogo
 	} else if Attacker.sprite_index == spr_fireball{
@@ -37,8 +37,8 @@ function Hurt(Attacker, Enemy, KBForce){
 	var part = instance_create_depth(Enemy.x,Enemy.y,depth-1,obj_particle);
 	part.owner = self
 	part.sprite_index = spr_rudehit
-	part.image_xscale = clamp(.50*Attacker.ATK,0,1.5)
-	part.image_yscale = clamp(.50*Attacker.ATK,0,1.5)
+	part.image_xscale = .75*Attacker.ATK
+	part.image_yscale = .75*Attacker.ATK
 	
 	//Ataque normal
 	} else {

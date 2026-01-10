@@ -101,5 +101,3 @@ if global.PlayersDown == instance_number(par_player) && global.GameStarted == tr
 	SetMusic(mus_Darkness_Falls,60,60)
 	TrueReset()
 }
-
-show_debug_message(instance_number(obj_transition))
