@@ -1,23 +1,14 @@
-num = irandom_range(1,9)
+num = irandom_range(1,3)
 pricebuff = 0;
 
 switch(num){
 
 	case 1: _item = obj_itemtestr; break;
 	
-	case 2: _item = obj_sunglasses; pricebuff = 14;  break;
+	case 2: _item = obj_goldensword; pricebuff = 10;  break;
 	
 	case 3: _item = noone break;
 	
-	case 4: _item = obj_candy; break;
-	
-	case 5: _item = obj_candy; break;
-	
-	case 6: _item = obj_bow;  pricebuff = 8;  break;
-	
-	case 7: _item = obj_coconut;  pricebuff = -2;  break;
-	
-	case 8: _item = obj_feather; pricebuff = 6; break;
 }
 
 if _item != noone{
