@@ -1,7 +1,5 @@
 //Ataque começa
 
-var _crit = 0;
-
 function GoldenStrike(){
 
 if (sprite_index != spr_herostrikegolden){ 
@@ -17,16 +15,13 @@ if (sprite_index != spr_herostrikegolden){
 	if (!ds_exists(HitByAttack, ds_type_list)) HitByAttack = ds_list_create();
 	ds_list_clear(HitByAttack)
 	
+	//crit
 	crit = irandom_range(1,20)
-} 
-
-if crit >= 18 && _crit != 1 {
-	ATK = ATK*4
-	show_debug_message("b");
-	_crit = 1;
-		
+	if crit >= 18{
+	ATK *= 4	
 	audio_play_sound(snd_critical,6,false,global.SEVolume)
-}
+	}
+} 
 
 AttackHit(spr_herostrikehb)
 
@@ -36,9 +31,7 @@ if (animationEnd) {
 	 State = PlayerStateFree; 
 	 animationEnd = false; 
 	 if crit >= 18 {
-		ATK = ATK/4
-		show_debug_message("a");
-		_crit = 0;
+		ATK *= 0.25 
 	}
      switch (round(direction / 90)) {
 		case 0: sprite_index = spr_heroright; break;
