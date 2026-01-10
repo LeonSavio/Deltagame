@@ -9,10 +9,10 @@ function Hurt(Attacker, Enemy, KBForce){
 	Attacker.TP += 0.1225
 	Enemy.Cd += 25
 	
+	/*
 	var part = instance_create_depth(Enemy.x,Enemy.y,depth-1,obj_particle);
 	part.owner = self
 	
-	/*
 	part.sprite_index = spr_icehit
 	part.image_xscale = .75
 	part.image_yscale = .75

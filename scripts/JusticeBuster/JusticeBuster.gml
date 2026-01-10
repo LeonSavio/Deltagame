@@ -29,7 +29,7 @@ function JusticeBuster(){
 	}
 	
 	//avisa
-	if (RudePower >= 46 && played == false) {
+	if (RudePower >= 73 && played == false) {
 		audio_play_sound(snd_suslaugh,0,false,global.SEVolume,0)
 		played = true
 	}

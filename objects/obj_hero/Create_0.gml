@@ -12,3 +12,4 @@ spr_item = spr_heroitem;
 
 State = PlayerStateFree
 StateAttack = [Strike]
+crit = 0;

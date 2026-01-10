@@ -31,6 +31,7 @@ function Erradicate(Attacker,Taker) {
 		par_player.EXP += Taker.EXPDrop
 			for (var i = 0; i < instance_number(par_player); i++){
 			global.Player[i].TP += 1.5
+			global.Gold += Taker.GoldDrop
 			}
 	}
 		}

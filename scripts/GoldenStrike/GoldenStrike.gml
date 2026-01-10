@@ -13,10 +13,11 @@ if (sprite_index != spr_herostrikegolden){
 	
 	if (!ds_exists(HitByAttack, ds_type_list)) HitByAttack = ds_list_create();
 	ds_list_clear(HitByAttack)
+	
+	crit = irandom_range(1,20)
 } 
 
-var _crit = random_range(1,20)
-if _crit >= 17 {
+if crit >= 18 {
 	ATK = ATK*4
 	audio_play_sound(snd_critical,6,false,global.SEVolume)
 }
@@ -28,7 +29,7 @@ PlayerAnimate();
 if (animationEnd) { 
 	 State = PlayerStateFree; 
 	 animationEnd = false; 
-	 if _crit >= 17 {
+	 if crit >= 18 {
 		ATK = ATK/4
 	}
      switch (round(direction / 90)) {

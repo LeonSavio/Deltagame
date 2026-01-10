@@ -11,7 +11,7 @@ function ImminentDeath(){
 		if beserked == false{
 		drainer = instance_create_layer(x,y,layer,obj_susiedrain);
 		drainer.owner = self
-		drainer.quantity = 0.05*TPCostMultiplier
+		drainer.quantity = 0.03*TPCostMultiplier
 		DEF -= 2
 		ATK += 1.5
 		KnockbackMult = 0
