@@ -98,6 +98,7 @@
     {"id":{"name":"obj_deer","path":"objects/obj_deer/obj_deer.yy",},},
     {"id":{"name":"obj_dialogue","path":"objects/obj_dialogue/obj_dialogue.yy",},},
     {"id":{"name":"obj_dialogueseq","path":"objects/obj_dialogueseq/obj_dialogueseq.yy",},},
+    {"id":{"name":"obj_dice","path":"objects/obj_dice/obj_dice.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_feather","path":"objects/obj_feather/obj_feather.yy",},},
     {"id":{"name":"obj_fireball","path":"objects/obj_fireball/obj_fireball.yy",},},
