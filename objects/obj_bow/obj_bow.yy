@@ -8,7 +8,7 @@
   "managed":true,
   "name":"obj_bow",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_item","path":"objects/par_item/par_item.yy",},"propertyId":{"name":"itemName","path":"objects/par_item/par_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bow",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_item","path":"objects/par_item/par_item.yy",},"propertyId":{"name":"itemName","path":"objects/par_item/par_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bowtie",},
   ],
   "parent":{
     "name":"Itens",
