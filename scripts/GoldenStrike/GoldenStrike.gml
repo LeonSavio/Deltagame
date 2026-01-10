@@ -1,4 +1,7 @@
 //Ataque começa
+
+var _crit = 0;
+
 function GoldenStrike(){
 
 if (sprite_index != spr_herostrikegolden){ 
@@ -17,8 +20,11 @@ if (sprite_index != spr_herostrikegolden){
 	crit = irandom_range(1,20)
 } 
 
-if crit >= 18 {
+if crit >= 18 && _crit != 1 {
 	ATK = ATK*4
+	show_debug_message("b");
+	_crit = 1;
+		
 	audio_play_sound(snd_critical,6,false,global.SEVolume)
 }
 
@@ -31,6 +37,8 @@ if (animationEnd) {
 	 animationEnd = false; 
 	 if crit >= 18 {
 		ATK = ATK/4
+		show_debug_message("a");
+		_crit = 0;
 	}
      switch (round(direction / 90)) {
 		case 0: sprite_index = spr_heroright; break;

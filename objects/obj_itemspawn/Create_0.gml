@@ -1,4 +1,4 @@
-num = irandom_range(1,9)
+num = irandom_range(1,8)
 pricebuff = 0;
 
 switch(num){
