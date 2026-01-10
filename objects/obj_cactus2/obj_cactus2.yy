@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_cactus2",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_cactus2",
   "overriddenProperties":[
@@ -34,7 +32,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_cactus2",
     "path":"sprites/spr_cactus2/spr_cactus2.yy",

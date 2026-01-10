@@ -1,23 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tree",
+  "%Name":"obj_coconut",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_tree",
+  "name":"obj_coconut",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_plant","path":"objects/par_plant/par_plant.yy",},"propertyId":{"name":"ItHurts","path":"objects/par_plant/par_plant.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_plant","path":"objects/par_plant/par_plant.yy",},"propertyId":{"name":"ATK","path":"objects/par_plant/par_plant.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_item","path":"objects/par_item/par_item.yy",},"propertyId":{"name":"itemName","path":"objects/par_item/par_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Coconut",},
   ],
   "parent":{
-    "name":"ActualObjects",
-    "path":"folders/Objects/ActualObjects.yy",
+    "name":"Itens",
+    "path":"folders/Objects/ActualObjects/Itens.yy",
   },
   "parentObjectId":{
-    "name":"par_plant",
-    "path":"objects/par_plant/par_plant.yy",
+    "name":"par_item",
+    "path":"objects/par_item/par_item.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -37,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tree",
-    "path":"sprites/spr_tree/spr_tree.yy",
+    "name":"spr_coconut",
+    "path":"sprites/spr_coconut/spr_coconut.yy",
   },
   "spriteMaskId":null,
   "visible":true,
