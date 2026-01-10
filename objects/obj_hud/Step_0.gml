@@ -41,6 +41,7 @@ for (var i = 0; i < PlayerMax; i++){
 	//Icon
 	if global.Player[i] != noone{
 	if array_contains(global.Player[i].StateAttack, HealPrayer) && global.Player[i].TP >= 20{
+	layer_sprite_alpha(Hud[i].Icon,1)
 	layer_sprite_change(Hud[i].Icon,spr_healprayericon)
 	} else {
 	layer_sprite_alpha(Hud[i].Icon,0)
