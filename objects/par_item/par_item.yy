@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v2","%Name":"entityColision","filters":[],"listItems":[],"multiselect":false,"name":"entityColision","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"itemName","filters":[],"listItems":[],"multiselect":false,"name":"itemName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Nothing","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"itemPrice","filters":[],"listItems":[],"multiselect":false,"name":"itemPrice","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"Iscard","filters":[],"listItems":[],"multiselect":false,"name":"Iscard","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -268,6 +268,7 @@
     {"id":{"name":"spr_deerup","path":"sprites/spr_deerup/spr_deerup.yy",},},
     {"id":{"name":"spr_deerupalt","path":"sprites/spr_deerupalt/spr_deerupalt.yy",},},
     {"id":{"name":"spr_depths","path":"sprites/spr_depths/spr_depths.yy",},},
+    {"id":{"name":"spr_dice","path":"sprites/spr_dice/spr_dice.yy",},},
     {"id":{"name":"spr_feather","path":"sprites/spr_feather/spr_feather.yy",},},
     {"id":{"name":"spr_fireball","path":"sprites/spr_fireball/spr_fireball.yy",},},
     {"id":{"name":"spr_flower","path":"sprites/spr_flower/spr_flower.yy",},},

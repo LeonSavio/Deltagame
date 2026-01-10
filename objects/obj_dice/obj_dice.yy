@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_generic2",
-    "path":"sprites/spr_generic2/spr_generic2.yy",
+    "name":"spr_dice",
+    "path":"sprites/spr_dice/spr_dice.yy",
   },
   "spriteMaskId":null,
   "visible":true,
