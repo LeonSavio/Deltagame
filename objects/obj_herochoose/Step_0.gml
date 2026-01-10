@@ -47,6 +47,7 @@ if confirmk{
 
 		instance_create_layer(x,y,"Objects",obj_hero);
 		layer_set_visible(Tiles, true)
+		layer_set_visible(Objects, true)
 		instance_destroy();
 		break;
 		
@@ -54,6 +55,7 @@ if confirmk{
 		global.GameStarted = true
 		instance_create_layer(x,y,"Objects",obj_axe);
 		layer_set_visible(Tiles, true)
+		layer_set_visible(Objects, true)
 		instance_destroy();
 		break;
 		
@@ -61,6 +63,7 @@ if confirmk{
 		global.GameStarted = true
 		instance_create_layer(x,y,"Objects",obj_deer);
 		layer_set_visible(Tiles, true)
+		layer_set_visible(Objects, true)
 		instance_destroy();
 		break;
 		
@@ -68,6 +71,7 @@ if confirmk{
 		global.GameStarted = true
 		instance_create_layer(x,y,"Objects",obj_scarf);
 		layer_set_visible(Tiles, true)
+		layer_set_visible(Objects, true)
 		instance_destroy();
 		break;
 	}

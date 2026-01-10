@@ -1,7 +1,8 @@
 if (!ds_exists(HitByAttack, ds_type_list)) HitByAttack = ds_list_create();
 ds_list_clear(HitByAttack)
 
-AttackHit(atk_rudebuster)
+AttackHit(spr_rudebuster)
+
 
 if Dir == 0{
 	x += spd;

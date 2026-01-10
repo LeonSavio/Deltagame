@@ -18,6 +18,7 @@ if (sprite_index != spr_herostrikegolden){
 var _crit = random_range(1,20)
 if _crit >= 17 {
 	ATK = ATK*4
+	audio_play_sound(snd_critical,6,false,global.SEVolume)
 }
 
 AttackHit(spr_herostrikehb)

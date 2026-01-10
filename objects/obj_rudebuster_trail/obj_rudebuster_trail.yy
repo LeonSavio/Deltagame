@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"atk_rudebuster",
-    "path":"sprites/atk_rudebuster/atk_rudebuster.yy",
+    "name":"spr_rudebuster",
+    "path":"sprites/spr_rudebuster/spr_rudebuster.yy",
   },
   "spriteMaskId":null,
   "visible":true,

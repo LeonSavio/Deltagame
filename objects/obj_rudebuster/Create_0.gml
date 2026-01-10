@@ -11,6 +11,7 @@ ATK = 0;
 KBForce = 0;
 EXP = 0;
 TP = 0;
+particle = false
 
 trailtime = 0;
 traildelay = 4;

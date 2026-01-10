@@ -7,6 +7,9 @@ rightk = 1
 confirmk = 1
 
 Tiles = layer_get_id("Tiles")
+Objects = layer_get_id("Objects")
+
 if !instance_exists(par_player){
 	layer_set_visible(Tiles, false)
+	layer_set_visible(Objects, false)
 }

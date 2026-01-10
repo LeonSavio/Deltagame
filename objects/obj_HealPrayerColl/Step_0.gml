@@ -11,8 +11,9 @@ if keyboard_check_released(confirmk){
 	if place_meeting(x,y,target){
 		target.HP += round(0.5+(Magic*0.5))
 		audio_play_sound(snd_heal,0,false,global.SEVolume)
-		var healef = instance_create_layer(target.x,target.y,"Ice",obj_healparticle)
+		var healef = instance_create_layer(target.x,target.y,"Ice",obj_particle)
 		healef.target = target
+		healef.sprite = spr_heal
 	}
 	owner.State = PlayerStateFree
 	instance_destroy()

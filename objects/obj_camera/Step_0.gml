@@ -14,7 +14,7 @@ for(var i = 0; i < array_length(playerList); ++i) {
 	floor(playerList[i].y-(camera_get_view_height(view_camera[i])*0.5)))
 	}
 	if !instance_exists(par_player){
-	camera_set_view_pos(global.cameras[i], 1696, 640)
+	camera_set_view_pos(global.cameras[i], 1696, 0)
 	}
 	view_xport[i] = cameraW * i;
 	view_wport[i] = cameraW;

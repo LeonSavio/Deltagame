@@ -45,7 +45,7 @@ function JusticeBuster(){
 		rudebuster.image_angle = (round(self.direction/90)*90);
 		rudebuster.Dir = round(self.direction/90); 
 				if RudePower < 73{
-					rudebuster.sprite_index = atk_greenbuster;
+					rudebuster.sprite_index = spr_greenbuster;
 					rudebuster.image_yscale = 0.70;
 					rudebuster.image_alpha = 0.4
 					rudebuster.spd = 7;
@@ -53,7 +53,7 @@ function JusticeBuster(){
 					rudebuster.KBForce = 3;
 				}
 				if RudePower >= 73{
-					rudebuster.sprite_index = atk_greenbuster;
+					rudebuster.sprite_index = spr_greenbuster;
 					rudebuster.image_yscale = 1.25;
 					rudebuster.spd = 8;
 					rudebuster.ATK = (self.ATK + (self.Magic/1.5))*2

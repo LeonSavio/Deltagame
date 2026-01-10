@@ -46,21 +46,21 @@ function RudeBuster(){
 		rudebuster.Dir = round(self.direction/90); 
 			
 				if RudePower < 20{
-					rudebuster.sprite_index = atk_greenbuster;
+					rudebuster.sprite_index = spr_greenbuster;
 					rudebuster.image_yscale = 0.90;
 					rudebuster.spd = 6;
 					rudebuster.ATK = (self.ATK + (self.Magic/2))*0.6
 					rudebuster.KBForce = 4;
 				}
 				if RudePower >= 20 && RudePower < 46{
-					rudebuster.sprite_index = atk_rudebuster;
+					rudebuster.sprite_index = spr_rudebuster;
 					rudebuster.spd = 7;
 					rudebuster.ATK = (self.ATK + (self.Magic/1.5))*1.2
 					audio_play_sound(snd_rudebuster_swing,0,false,global.SEVolume,0,random_range(0.9,1.1))
 					rudebuster.KBForce = 7;
 				}
 				if RudePower >= 46{
-					rudebuster.sprite_index = atk_redbuster;
+					rudebuster.sprite_index = spr_redbuster;
 					rudebuster.image_yscale = 1.10;
 					rudebuster.spd = 9;
 					rudebuster.ATK = (self.ATK + self.Magic)*1.8
