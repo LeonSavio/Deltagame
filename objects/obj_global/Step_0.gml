@@ -96,6 +96,9 @@ if keyboard_check_pressed(vk_pageup){
 
 #endregion
 
+//show_debug_message(global.PlayersDown)
+//show_debug_message("Players: " + string(instance_number(par_player)))
+
 if global.PlayersDown == instance_number(par_player) && global.GameStarted == true{
 	SetTransition(seq_fadeout,seq_fadein,rm_Gameover)
 	SetMusic(mus_Darkness_Falls,60,60)

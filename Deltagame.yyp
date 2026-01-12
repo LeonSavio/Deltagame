@@ -330,6 +330,7 @@
     {"id":{"name":"spr_white","path":"sprites/spr_white/spr_white.yy",},},
     {"id":{"name":"spr_whitebar","path":"sprites/spr_whitebar/spr_whitebar.yy",},},
     {"id":{"name":"spr_XVI_TheTower","path":"sprites/spr_XVI_TheTower/spr_XVI_TheTower.yy",},},
+    {"id":{"name":"Sprite104","path":"sprites/Sprite104/Sprite104.yy",},},
     {"id":{"name":"tile_deltarunetileboard","path":"sprites/tile_deltarunetileboard/tile_deltarunetileboard.yy",},},
     {"id":{"name":"TilesetBoard","path":"tilesets/TilesetBoard/TilesetBoard.yy",},},
   ],

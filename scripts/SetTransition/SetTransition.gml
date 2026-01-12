@@ -3,7 +3,11 @@ global.TransitionEnd = -1
 
 function SetTransition(_typeOut, _typeIn, _roomTarget, targetx = 0, targety = 0, soundeffect = false){
 	if instance_exists(par_player){
-	par_player.State = PlayerStateAiming
+	with (par_player){
+		if State != PlayerStateDown{
+			State = PlayerStateAiming
+		}
+	}
 	}
 	global.roomTarget = _roomTarget
 	global.Spawnx = targetx
@@ -42,7 +46,11 @@ function MiddleTransition(){
 
 function FinishTransition(){
 	if instance_exists(par_player){
-	par_player.State = PlayerStateFree
+	with (par_player){
+		if State != PlayerStateDown{
+			State = PlayerStateFree
+		}
+	}
 	}
 	layer_sequence_destroy(self.elementID);
 }

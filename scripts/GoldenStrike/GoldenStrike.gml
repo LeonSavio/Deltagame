@@ -2,6 +2,8 @@
 
 function GoldenStrike(){
 
+var _critted = false
+
 if (sprite_index != spr_herostrikegolden){ 
     
     //faz a animação
@@ -19,7 +21,9 @@ if (sprite_index != spr_herostrikegolden){
     crit = irandom_range(1,20)
     if crit >= 18{
     ATK *= 4    
+	show_debug_message(1);
     audio_play_sound(snd_critical,6,false,global.SEVolume)
+	_critted = true
     }
 } 
 
@@ -30,15 +34,17 @@ PlayerAnimate();
 if (animationEnd) { 
      State = PlayerStateFree; 
      animationEnd = false; 
-     if crit >= 18 {
-        ATK *= 0.25 
-    }
      switch (round(direction / 90)) {
         case 0: sprite_index = spr_heroright; break;
         case 3: sprite_index = spr_herodown;  break;
         case 2: sprite_index = spr_heroleft;  break;
         case 1: sprite_index = spr_heroup;    break;
     }
+}
+
+if _critted == true{
+        ATK *= 0.25 
+		show_debug_message(0);
 }
 
 }

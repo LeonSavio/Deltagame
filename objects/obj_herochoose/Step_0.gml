@@ -10,16 +10,18 @@ leftk = keyboard_check_pressed(ord("A"))
 rightk = keyboard_check_pressed(ord("D"))
 confirmk = keyboard_check_pressed(vk_enter)
 
-if global.main_gamepad != undefined{
-	rightk = gamepad_button_check_pressed(global.main_gamepad,gp_padr)
-	leftk = gamepad_button_check_pressed(global.main_gamepad,gp_padl)
-	confirmk = gamepad_button_check_pressed(global.main_gamepad,gp_face1)
-}
+
 }
 if instance_number(par_player) = 0 {
 leftk = keyboard_check_pressed(vk_left)
 rightk = keyboard_check_pressed(vk_right)
 confirmk = keyboard_check_pressed(ord("Z"))
+
+if global.main_gamepad != undefined{
+	rightk = gamepad_button_check_pressed(global.main_gamepad,gp_padr)
+	leftk = gamepad_button_check_pressed(global.main_gamepad,gp_padl)
+	confirmk = gamepad_button_check_pressed(global.main_gamepad,gp_face1)
+}
 }
 
 if leftk{
