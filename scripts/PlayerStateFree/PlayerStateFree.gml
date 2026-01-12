@@ -9,6 +9,16 @@ var stayidleplease = keyboard_check_released(Down)
 var confirmk = keyboard_check_pressed(Confirm)
 var taughtk = keyboard_check_pressed(Taught)
 
+if global.main_gamepad != undefined && Player == 1{
+	rightk = gamepad_button_check(global.main_gamepad,gp_padr)
+	leftk = gamepad_button_check(global.main_gamepad,gp_padl)
+	upk = gamepad_button_check(global.main_gamepad,gp_padu)
+	downk = gamepad_button_check(global.main_gamepad,gp_padd)
+	stayidleplease = gamepad_button_check_released(global.main_gamepad,gp_padd)
+	confirmk = gamepad_button_check_pressed(global.main_gamepad,gp_face1)
+	taughtk = gamepad_button_check_pressed(global.main_gamepad,gp_face4)
+}
+
 //Define velocidades
 hspd = (rightk - leftk) * spd;
 vspd = (downk - upk) * spd;

@@ -5,6 +5,15 @@ var leftk = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"));
 var confirmk = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter);
 var cancelk = keyboard_check_pressed(ord("X"))  || keyboard_check_pressed(vk_shift);
 
+if global.main_gamepad != undefined{
+	rightk = gamepad_button_check_pressed(global.main_gamepad,gp_padr)
+	leftk = gamepad_button_check_pressed(global.main_gamepad,gp_padl)
+	upk = gamepad_button_check_pressed(global.main_gamepad,gp_padu)
+	downk = gamepad_button_check_pressed(global.main_gamepad,gp_padd)
+	confirmk = gamepad_button_check_pressed(global.main_gamepad,gp_face1)
+	cancelk = gamepad_button_check_pressed(global.main_gamepad,gp_face2)
+}
+
 //Faz um loop entre as opções
 
 pos += downk - upk

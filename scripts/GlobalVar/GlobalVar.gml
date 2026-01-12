@@ -1,12 +1,14 @@
-global.show_hp = false
-global.FullPlayer = false;
-global.show_walls = false;
-global.PlayersDown = 0;
-global.GameStarted = false;
-global.time = 0
-global.Gold = 0;
-global.restartShop = false
-global.MusicVolume = 0.3;
-global.SEVolume = 0.6;
+show_hp = false
+FullPlayer = false;
+show_walls = false;
+PlayersDown = 0;
+GameStarted = false;
+time = 0
+Gold = 0;
+restartShop = false
+MusicVolume = 0.3;
+SEVolume = 0.6;
+gamepads = []
+main_gamepad = undefined
 
-global.Player = array_create(MAX_PLAYERS,noone)
+Player = array_create(MAX_PLAYERS,noone)
