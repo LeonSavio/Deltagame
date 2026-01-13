@@ -31,7 +31,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"11d336fa-126d-4551-b0ca-ec6abf2e7ac0","blendMode":0,"displayName":"default","isLocked":false,"name":"11d336fa-126d-4551-b0ca-ec6abf2e7ac0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"5d7061e2-e1b7-49fe-853e-7c85fc15e340","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5d7061e2-e1b7-49fe-853e-7c85fc15e340","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"5d7061e2-e1b7-49fe-853e-7c85fc15e340","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"5d7061e2-e1b7-49fe-853e-7c85fc15e340","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_axeswing",
   "nineSlice":null,
