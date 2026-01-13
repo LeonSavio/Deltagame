@@ -177,6 +177,7 @@
     {"id":{"name":"IceShock","path":"scripts/IceShock/IceShock.yy",},},
     {"id":{"name":"ImminentDeath","path":"scripts/ImminentDeath/ImminentDeath.yy",},},
     {"id":{"name":"JusticeBuster","path":"scripts/JusticeBuster/JusticeBuster.yy",},},
+    {"id":{"name":"KeyboardAndController","path":"scripts/KeyboardAndController/KeyboardAndController.yy",},},
     {"id":{"name":"KeytoString","path":"scripts/KeytoString/KeytoString.yy",},},
     {"id":{"name":"LevelUp","path":"scripts/LevelUp/LevelUp.yy",},},
     {"id":{"name":"LightUp","path":"scripts/LightUp/LightUp.yy",},},
