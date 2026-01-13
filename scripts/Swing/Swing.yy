@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Swing",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Swing",
+  "parent":{
+    "name":"Attacks",
+    "path":"folders/Scripts/Combat/Attacks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
