@@ -4,8 +4,8 @@ var confirmk = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_ent
 var cancelk = keyboard_check_pressed(ord("X"))  || keyboard_check_pressed(vk_shift);
 
 if global.main_gamepad != undefined{
-	upk = gamepad_button_check_pressed(global.main_gamepad,gp_padu)
-	downk = gamepad_button_check_pressed(global.main_gamepad,gp_padd)
+	upk = gamepad_button_check_pressed(global.main_gamepad,gp_padr)
+	downk = gamepad_button_check_pressed(global.main_gamepad,gp_padl)
 	confirmk = gamepad_button_check_pressed(global.main_gamepad,gp_face1)
 	cancelk = gamepad_button_check_pressed(global.main_gamepad,gp_face2)
 }
